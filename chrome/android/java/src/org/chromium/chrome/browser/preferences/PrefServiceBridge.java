@@ -508,6 +508,13 @@ public class PrefServiceBridge {
     }
 
     /**
+     * @param whether HTTPSE should be enabled.
+     */
+    public void setHTTPSEEnabled(boolean enabled) {
+        PrefServiceBridgeJni.get().setHTTPSEEnabled(enabled);
+    }
+
+    /**
      * @param whether Tracking Protection should be enabled.
      */
     public void setTrackingProtectionEnabled(boolean enabled) {
@@ -1280,5 +1287,6 @@ public class PrefServiceBridge {
         void setForceWebContentsDarkModeEnabled(PrefServiceBridge caller, boolean enabled);
         void setTrackingProtectionEnabled(boolean enabled);
         void setAdBlockEnabled(boolean enabled);
+        void setHTTPSEEnabled(boolean enabled);
     }
 }
