@@ -518,6 +518,11 @@ public class ChromeBrowserInitializer {
         FeatureUtilities.cacheNativeFlagsForServiceManagerOnlyMode();
 
         ModuleInstaller.getInstance().recordStartupTime();
+
+        ChromeApplication app = (ChromeApplication)ContextUtils.getApplicationContext();
+        if (null != app) {
+            app.initShieldsConfig();
+        }
     }
 
     private ActivityStateListener createActivityStateListener() {
