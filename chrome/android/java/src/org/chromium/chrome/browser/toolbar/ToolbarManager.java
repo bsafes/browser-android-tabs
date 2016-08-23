@@ -980,7 +980,7 @@ public class ToolbarManager implements ScrimObserver, ToolbarTabController, UrlF
             BrowserStateBrowserControlsVisibilityDelegate controlsVisibilityDelegate,
             OverviewModeBehavior overviewModeBehavior, LayoutManager layoutManager,
             OnClickListener tabSwitcherClickHandler, OnClickListener newTabClickHandler,
-            OnClickListener bookmarkClickHandler, OnClickListener customTabsBackClickHandler) {
+            OnClickListener bookmarkClickHandler, OnClickListener braveShieldsClickHandler, OnClickListener customTabsBackClickHandler) {
         assert !mInitializedWithNative;
 
         mTabModelSelector = tabModelSelector;
@@ -997,7 +997,7 @@ public class ToolbarManager implements ScrimObserver, ToolbarTabController, UrlF
 
         mToolbar.initializeWithNative(tabModelSelector, controlsVisibilityDelegate, layoutManager,
                 tabSwitcherClickHandler, tabSwitcherLongClickHandler, newTabClickHandler,
-                bookmarkClickHandler, customTabsBackClickHandler, overviewModeBehavior);
+                bookmarkClickHandler, braveShieldsClickHandler, customTabsBackClickHandler, overviewModeBehavior);
 
         mToolbar.addOnAttachStateChangeListener(new OnAttachStateChangeListener() {
             @Override
