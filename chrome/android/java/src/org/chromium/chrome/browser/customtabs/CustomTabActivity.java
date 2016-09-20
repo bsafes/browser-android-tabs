@@ -85,6 +85,8 @@ import org.chromium.chrome.browser.tab.TabAssociatedApp;
 import org.chromium.chrome.browser.tabmodel.ChromeTabCreator;
 import org.chromium.chrome.browser.tabmodel.TabModelSelector;
 import org.chromium.chrome.browser.tabmodel.TabModelSelectorImpl;
+import org.chromium.chrome.browser.tabmodel.TabPersistencePolicy;
+import org.chromium.chrome.browser.tabmodel.TabModelSelectorTabObserver;
 import org.chromium.chrome.browser.usage_stats.UsageStatsService;
 import org.chromium.chrome.browser.util.ColorUtils;
 import org.chromium.chrome.browser.util.IntentUtils;
@@ -94,6 +96,7 @@ import org.chromium.content_public.browser.WebContents;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
+import java.net.URL;
 
 /**
  * The activity for custom tabs. It will be launched on top of a client's task.
@@ -125,6 +128,8 @@ public class CustomTabActivity extends ChromeActivity<CustomTabActivityComponent
     private CustomTabToolbarCoordinator mToolbarCoordinator;
     private SessionDataHolder mSessionDataHolder;
     private CustomTabIntentHandler mCustomTabIntentHandler;
+
+    private TabModelSelectorTabObserver mTabModelSelectorTabObserver;
 
     // This is to give the right package name while using the client's resources during an
     // overridePendingTransition call.
