@@ -515,6 +515,13 @@ public class PrefServiceBridge {
     }
 
     /**
+     * @param whether Fingerprinting Protection should be enabled.
+     */
+    public void setFingerprintingProtectionEnabled(boolean enabled) {
+        PrefServiceBridgeJni.get().setFingerprintingProtectionEnabled(enabled);
+    }
+
+    /**
      * @param whether Tracking Protection should be enabled.
      */
     public void setTrackingProtectionEnabled(boolean enabled) {
@@ -1288,5 +1295,6 @@ public class PrefServiceBridge {
         void setTrackingProtectionEnabled(boolean enabled);
         void setAdBlockEnabled(boolean enabled);
         void setHTTPSEEnabled(boolean enabled);
+        void setFingerprintingProtectionEnabled(boolean enabled);
     }
 }
