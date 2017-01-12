@@ -536,6 +536,13 @@ public class PrefServiceBridge {
     }
 
     /**
+     * @param whether AdBlock should be enabled.
+     */
+    public void setAdBlockRegionalEnabled(boolean enabled) {
+        PrefServiceBridgeJni.get().setAdBlockRegionalEnabled(enabled);
+    }
+
+    /**
      * @return whether Safe Browsing is managed
      */
     public boolean isSafeBrowsingManaged() {
@@ -1296,5 +1303,6 @@ public class PrefServiceBridge {
         void setAdBlockEnabled(boolean enabled);
         void setHTTPSEEnabled(boolean enabled);
         void setFingerprintingProtectionEnabled(boolean enabled);
+        void setAdBlockRegionalEnabled(boolean enabled);
     }
 }
