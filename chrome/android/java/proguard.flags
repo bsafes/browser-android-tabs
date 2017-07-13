@@ -93,3 +93,5 @@
   public int getMinApkVersion();
   public boolean requiresSignIn();
 }
+
+-dontwarn com.mixpanel.android.R**
