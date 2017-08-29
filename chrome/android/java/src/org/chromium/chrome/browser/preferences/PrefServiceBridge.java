@@ -514,11 +514,19 @@ public class PrefServiceBridge {
         PrefServiceBridgeJni.get().setHTTPSEEnabled(enabled);
     }
 
+    public boolean isHTTPSEEnabled() {
+        return PrefServiceBridgeJni.get().getHTTPSEEnabled();
+    }
+
     /**
      * @param whether Fingerprinting Protection should be enabled.
      */
     public void setFingerprintingProtectionEnabled(boolean enabled) {
         PrefServiceBridgeJni.get().setFingerprintingProtectionEnabled(enabled);
+    }
+
+    public boolean isFingerprintingProtectionEnabled() {
+        return PrefServiceBridgeJni.get().getFingerprintingProtectionEnabled();
     }
 
     /**
@@ -528,6 +536,10 @@ public class PrefServiceBridge {
         PrefServiceBridgeJni.get().setTrackingProtectionEnabled(enabled);
     }
 
+    public boolean isTrackingProtectionEnabled() {
+        return PrefServiceBridgeJni.get().getTrackingProtectionEnabled();
+    }
+
     /**
      * @param whether AdBlock should be enabled.
      */
@@ -535,11 +547,19 @@ public class PrefServiceBridge {
         PrefServiceBridgeJni.get().setAdBlockEnabled(enabled);
     }
 
+    public boolean isAdBlockEnabled() {
+        return PrefServiceBridgeJni.get().getAdBlockEnabled();
+    }
+
     /**
      * @param whether AdBlock should be enabled.
      */
     public void setAdBlockRegionalEnabled(boolean enabled) {
         PrefServiceBridgeJni.get().setAdBlockRegionalEnabled(enabled);
+    }
+
+    public boolean isAdBlockRegionalEnabled() {
+        return PrefServiceBridgeJni.get().getAdBlockRegionalEnabled();
     }
 
     /**
@@ -1304,5 +1324,10 @@ public class PrefServiceBridge {
         void setHTTPSEEnabled(boolean enabled);
         void setFingerprintingProtectionEnabled(boolean enabled);
         void setAdBlockRegionalEnabled(boolean enabled);
+        boolean getFingerprintingProtectionEnabled();
+        boolean getHTTPSEEnabled();
+        boolean getTrackingProtectionEnabled();
+        boolean getAdBlockEnabled();
+        boolean getAdBlockRegionalEnabled();
     }
 }
