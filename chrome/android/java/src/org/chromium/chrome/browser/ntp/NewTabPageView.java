@@ -391,7 +391,9 @@ public class NewTabPageView extends HistoryNavigationLayout {
     @Override
     protected void onWindowVisibilityChanged(int visibility) {
         super.onWindowVisibilityChanged(visibility);
-        updateBraveStats();
+        if (visibility == VISIBLE) {
+            updateBraveStats();
+        }
     }
 
     /**
