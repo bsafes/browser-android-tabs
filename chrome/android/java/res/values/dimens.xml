@@ -666,4 +666,8 @@
 
     <!-- ChromeTextInputLayout dimensions -->
     <dimen name="text_input_layout_padding_start">3dp</dimen>
+
+    <!-- Brave shields menu dimensions -->
+    <dimen name="brave_shields_first_group_item_height">36dp</dimen>
+    <dimen name="brave_shields_second_group_item_height">44dp</dimen>
 </resources>
