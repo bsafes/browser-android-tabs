@@ -400,6 +400,21 @@ public class PrefServiceBridge {
     }
 
     /**
+     * @return true if 'Play YouTube video in browser' is enabled.
+     * The default is false.
+     */
+    public boolean playYTVideoInBrowserEnabled() {
+        return PrefServiceBridgeJni.getPlayYTVideoInBrowserEnabled();
+    }
+
+    /**
+     * @return Whether 'Play YouTube video in browser' is managed by policy.
+     */
+    public boolean playYTVideoInBrowserManaged() {
+        return isContentSettingManaged(ContentSettingsType.CONTENT_SETTINGS_TYPE_PLAY_YT_VIDEO_IN_BROWSER);
+    }
+
+    /**
      * @return true if background sync is managed by policy.
      */
     public boolean isBackgroundSyncManaged() {
@@ -440,6 +455,13 @@ public class PrefServiceBridge {
      */
     public void setPlayVideoInBackgroundEnabled(boolean enabled) {
         PrefServiceBridgeJni.setPlayVideoInBackgroundEnabled(enabled);
+    }
+
+    /**
+     * Enable or disable 'Play YouTube video in browser' option
+     */
+    public void setPlayYTVideoInBrowserEnabled(boolean enabled) {
+        PrefServiceBridgeJni.setPlayYTVideoInBrowserEnabled(enabled);
     }
 
     /**
@@ -1392,5 +1414,7 @@ public class PrefServiceBridge {
                 int contentSettingType, String pattern, int setting);
         boolean getPlayVideoInBackgroundEnabled();
         void setPlayVideoInBackgroundEnabled(boolean enabled);
+        boolean getPlayYTVideoInBrowserEnabled();
+        void setPlayYTVideoInBrowserEnabled(boolean enabled);
     }
 }
