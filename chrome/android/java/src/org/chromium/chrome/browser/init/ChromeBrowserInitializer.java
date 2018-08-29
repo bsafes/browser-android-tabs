@@ -600,7 +600,7 @@ public class ChromeBrowserInitializer {
         ModuleInstaller.getInstance().recordStartupTime();
 
         InitAdBlock();
-        UpdateStats();
+        //UpdateStats();
         CheckInstallationSource();
         SwitchSearchSuggestEnabled();
     }
