@@ -169,6 +169,7 @@ extern const char kChromeUIVersionHost[];
 extern const char kChromeUIVersionURL[];
 extern const char kChromeUIWelcomeHost[];
 extern const char kChromeUIWelcomeURL[];
+extern const char kRewardsJS[];
 
 #if defined(OS_WIN)
 // TODO(crbug.com/1003960): Remove when issue is resolved.

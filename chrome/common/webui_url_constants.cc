@@ -167,6 +167,7 @@ const char kChromeUIVersionHost[] = "version";
 const char kChromeUIVersionURL[] = "chrome://version/";
 const char kChromeUIWelcomeHost[] = "welcome";
 const char kChromeUIWelcomeURL[] = "chrome://welcome/";
+const char kRewardsJS[] = "brave_rewards.bundle.js";
 
 #if defined(OS_WIN)
 // TODO(crbug.com/1003960): Remove when issue is resolved.
