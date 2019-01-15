@@ -144,6 +144,7 @@ public class ToolbarPhone extends ToolbarLayout implements Invalidator.Client, O
     private ImageView mBraveRewardsPanelButton;
     private TextView mBraveRewardsNotificationsCount;
     private BraveRewardsNativeWorker mBraveRewardsNativeWorker;
+    private BraveRewardsPanelPopup mRewardsPopup;
 
     private ObjectAnimator mTabSwitcherModeAnimation;
     private ObjectAnimator mDelayedTabSwitcherModeAnimation;
@@ -573,11 +574,25 @@ public class ToolbarPhone extends ToolbarLayout implements Invalidator.Client, O
                 mBraveShieldsListener.onClick(mBraveShieldsButton);
             }
         } else if (mBraveRewardsPanelButton == v) {
-            if (null != mBraveRewardsPanelButton) {
-                BraveRewardsPanelPopup rewardsPopup = new BraveRewardsPanelPopup(v);
-                rewardsPopup.showLikePopDownMenu();
+            if (null == mRewardsPopup){
+              mRewardsPopup = new BraveRewardsPanelPopup(v);
+              mRewardsPopup.showLikePopDownMenu();
             }
         }
+    }
+
+    @Override
+    public  void onRewardsPanelDismiss() {
+        mRewardsPopup = null;
+    }
+
+
+    @Override
+    public  void dismissRewardsPanel() {
+      if ( null != mRewardsPopup ) {
+         mRewardsPopup.dismiss();
+         mRewardsPopup = null;
+      }
     }
 
     @Override
