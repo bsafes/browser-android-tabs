@@ -38,6 +38,7 @@ import org.chromium.base.ContextUtils;
 import org.chromium.base.SysUtils;
 import org.chromium.base.metrics.RecordUserAction;
 import org.chromium.chrome.R;
+import org.chromium.chrome.browser.ChromeFeatureList;
 import org.chromium.chrome.browser.omaha.UpdateMenuItemHelper;
 import org.chromium.chrome.browser.util.AccessibilityUtil;
 import org.chromium.chrome.browser.widget.ViewHighlighter;
@@ -235,6 +236,10 @@ class AppMenu implements OnItemClickListener, OnKeyListener {
         List<MenuItem> menuItems = new ArrayList<MenuItem>();
         for (int i = 0; i < numItems; ++i) {
             MenuItem item = mMenu.getItem(i);
+            if (!ChromeFeatureList.isEnabled(ChromeFeatureList.BRAVE_REWARDS) &&
+                item.getItemId() == R.id.brave_rewards_id) {
+                continue;
+            }
             if (item.isVisible()) {
                 menuItems.add(item);
             }
