@@ -228,6 +228,7 @@ const base::Feature* kFeaturesExposedToJava[] = {
     &switches::kSyncSendTabToSelf,
     &unified_consent::kUnifiedConsent,
     &subresource_filter::kSafeBrowsingSubresourceFilter,
+    &features::kBraveRewards,
 };
 
 const base::Feature* FindFeatureExposedToJava(const std::string& feature_name) {
