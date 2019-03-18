@@ -31,7 +31,7 @@ class AwBrowserContext;
 class AwFeatureListCreator;
 
 std::string GetProduct();
-std::string GetUserAgent();
+std::string GetUserAgent(const std::string& host);
 
 class AwContentBrowserClient : public content::ContentBrowserClient {
  public:
@@ -215,7 +215,7 @@ class AwContentBrowserClient : public content::ContentBrowserClient {
       mojo::PendingReceiver<network::mojom::RestrictedCookieManager>* receiver)
       override;
   std::string GetProduct() override;
-  std::string GetUserAgent() override;
+  std::string GetUserAgent(const std::string& host) override;
   ContentBrowserClient::WideColorGamutHeuristic GetWideColorGamutHeuristic()
       override;
 
