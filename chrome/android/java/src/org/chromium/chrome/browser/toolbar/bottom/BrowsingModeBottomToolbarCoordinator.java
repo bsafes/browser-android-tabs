@@ -116,18 +116,7 @@ public class BrowsingModeBottomToolbarCoordinator {
         // setupIPH(FeatureConstants.CHROME_DUET_SEARCH_FEATURE, mSearchAccelerator,
         //         searchAcceleratorListener);
 
-        mBookmarksButton = toolbarRoot.findViewById(R.id.bookmarks_button);
-        mBookmarksButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    BookmarkUtils.showBookmarkManager((ChromeActivity) v.getContext());
-                } catch (ClassCastException exc) {
-                    assert false;
-                    // Just ignore it for now
-                }
-            }
-        });
+        mBookmarksButton = toolbarRoot.findViewById(R.id.bookmark_this_page_id);
 
         mSearchAccelerator = toolbarRoot.findViewById(R.id.search_accelerator);
         mSearchAccelerator.setOnClickListener(searchAcceleratorListener);
@@ -193,7 +182,7 @@ public class BrowsingModeBottomToolbarCoordinator {
      * @param themeColorProvider Notifies components when theme color changes.
      * @param incognitoStateProvider Notifies components when incognito state changes.
      */
-    void initializeWithNative(OnClickListener tabSwitcherListener,
+    void initializeWithNative(OnClickListener tabSwitcherListener, OnClickListener bookmarkClickListener,
             AppMenuButtonHelper menuButtonHelper, TabCountProvider tabCountProvider,
             ThemeColorProvider themeColorProvider, IncognitoStateProvider incognitoStateProvider) {
         mMediator.setThemeColorProvider(themeColorProvider);
@@ -216,6 +205,7 @@ public class BrowsingModeBottomToolbarCoordinator {
         mMenuButton.setThemeColorProvider(themeColorProvider);
 
         mBookmarksButton.setThemeColorProvider(themeColorProvider);
+        mBookmarksButton.setOnClickListener(bookmarkClickListener);
     }
 
     /**
@@ -301,5 +291,15 @@ public class BrowsingModeBottomToolbarCoordinator {
         mTabSwitcherButtonCoordinator.destroy();
         mMenuButton.destroy();
         mBookmarksButton.destroy();
+    }
+
+    /**
+     * @param isBookmarked Whether or not the current tab is already bookmarked.
+     * @param editingAllowed Whether or not bookmarks can be modified (added, edited, or removed).
+     */
+    public void updateBookmarkButton(boolean isBookmarked, boolean editingAllowed) {
+        if (mBookmarksButton != null) {
+            mBookmarksButton.updateBookmarkButton(isBookmarked, editingAllowed);
+        }
     }
 }
