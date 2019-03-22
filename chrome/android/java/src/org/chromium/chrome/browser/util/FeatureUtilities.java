@@ -237,7 +237,7 @@ public class FeatureUtilities {
     public static void cacheNativeFlags() {
         cacheCommandLineOnNonRootedEnabled();
         FirstRunUtils.cacheFirstRunPrefs();
-        cacheBottomToolbarEnabled();
+        // cacheBottomToolbarEnabled();
         cacheAdaptiveToolbarEnabled();
         cacheLabeledBottomToolbarEnabled();
         cacheNightModeAvailable();
