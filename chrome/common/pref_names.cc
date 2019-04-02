@@ -2775,4 +2775,6 @@ const char kSharingFCMRegistration[] = "sharing.fcm_registration";
 const char kHatsSurveyMetadata[] = "hats.survey_metadata";
 #endif  // !defined(OS_ANDROID)
 
+// Boolean that is true when SafetyNet check is failed.
+const char kSafetynetCheckFailed[] = "safetynetcheck.failed";
 }  // namespace prefs
