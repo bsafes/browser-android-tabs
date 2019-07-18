@@ -798,7 +798,7 @@ public class ChromeTabbedActivity extends ChromeActivity implements ScreenshotMo
                           , currentTab.getHttpsUpgrades()
                           , currentTab.getScriptsBlocked()
                           , currentTab.getFingerprintsBlocked());
-                    } catch (Exception e) {
+                    } catch (Exception ex) {
                         setBraveShieldsBlackAndWhite();
                     }
                 }
