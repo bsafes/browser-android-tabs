@@ -247,6 +247,7 @@ apoyar a los creadores de contenido que más te gustan.</string>
     <string name="prefs_appearance">Apariencia</string>
     <string name="hide_brave_rewards_icon_title">Ocultar el icono de Brave Rewards</string>
     <string name="hide_brave_rewards_icon_description">Oculta el icono de Brave Rewards cuando Brave Rewards no están disponibles</string>
+    <string name="show_ads_when_brave_is_not_in_use">Mostrar ads cuando Brave no esté en uso</string>
     <string name="reset_brave_rewards_option">Restablecer Brave Rewards</string>
     <string name="reset_brave_rewards_option_description">Esto borrará tu cartera de Brave y restablecerá los datos de tus Brave Rewards</string>
     <string name="reset_brave_rewards_error_title">Error al restablecer</string>
@@ -308,5 +309,9 @@ apoyar a los creadores de contenido que más te gustan.</string>
     <string name="prefs_welcome_tour">Recorrido de bienvenida</string>
     <string name="welcome_tour_dialog_text">El reinicio del «recorrido de bienvenida» no afectará ninguna configuración existente.</string>
     <string name="finish">Terminar</string>
+    
+    <string name="clear_download_title">Descargar historial</string>
+
+    <string name="settings_exit">Salida de la configuración</string>
 
 </resources>

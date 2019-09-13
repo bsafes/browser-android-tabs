@@ -1401,10 +1401,10 @@ i skrypty śledzące</translation>
 <translation id="1078265935778232285">Witaj w przeglądarce Brave</translation>
 <translation id="8867511707771147258">Wybierz domyślną wyszukiwarkę</translation>
 <translation id="5806601733251372221">Tarcze Brave</translation>
-<translation id="2880356288762235261">reklamy ingerujące w prywatność oraz programy śledzące, dzięki czemu możesz przeglądać internet bez martwienia się o to, że ktoś monitoruje Twoje działania. </translation>
-<translation id="6980054221517850750">Zarób tokeny</translation>
-<translation id="1789842587755069541">dla wyświetlania reklam chroniących prywatność. Korzystaj z nich, aby wspierać ulubione strony i twórców.</translation>
-<translation id="821707262661492716">dla wyświetlania reklam chroniących prywatność.</translation>
+<translation id="2880356288762235261">reklamy naruszające prywatność oraz skrypty śledzące, dzięki czemu możesz przeglądać internet bez martwienia się o to, że ktoś monitoruje Twoje działania.</translation>
+<translation id="6980054221517850750">Zarabiaj tokeny</translation>
+<translation id="1789842587755069541">za wyświetlanie reklam chroniących prywatność. Korzystaj z nich, aby wspierać ulubione strony i twórców.</translation>
+<translation id="821707262661492716">za wyświetlanie reklam chroniących prywatność.</translation>
 <translation id="7387657435304445967">Akceptuję warunki, aby korzystać z nagród Brave</translation>
 <translation id="53852415493597253">Wyrażam zgodę na korzystanie z nagród Brave</translation>
 <translation id="4281844954008187215">Warunki użytkowania</translation>
@@ -1420,4 +1420,7 @@ i skrypty śledzące</translation>
 <translation id="7808431604191267817">Ponowne włączenie samouczka nie wpływa na istniejące ustawienia.</translation>
 <translation id="2453860139492968684">Zakończ</translation>
 <translation id="8906569594072556752">Wprowadzenie</translation>
+<translation id="6393502589311632553">Pokaż reklamy, gdy program Brave nie jest w użyciu</translation>
+<translation id="7127980134843952133">Historia pobrań</translation>
+<translation id="327726072512457161">Wyjście z ustawień</translation>
 </translationbundle>
