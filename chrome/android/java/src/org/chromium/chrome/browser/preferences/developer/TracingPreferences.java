@@ -16,6 +16,7 @@ import org.chromium.chrome.R;
 import org.chromium.chrome.browser.preferences.PreferenceUtils;
 import org.chromium.chrome.browser.tracing.TracingController;
 import org.chromium.chrome.browser.tracing.TracingNotificationManager;
+import org.chromium.chrome.browser.preferences.BravePreferenceFragment;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -27,7 +28,7 @@ import java.util.Set;
 /**
  * Settings fragment that shows options for recording a performance trace.
  */
-public class TracingPreferences extends PreferenceFragment implements TracingController.Observer {
+public class TracingPreferences extends BravePreferenceFragment implements TracingController.Observer {
     static final String NON_DEFAULT_CATEGORY_PREFIX = "disabled-by-default-";
 
     @VisibleForTesting

@@ -54,6 +54,7 @@ import org.chromium.components.signin.AccountManagerFacade;
 import org.chromium.components.signin.ChromeSigninController;
 import org.chromium.components.sync.AndroidSyncSettings;
 import org.chromium.content_public.browser.UiThreadTaskTraits;
+import org.chromium.chrome.browser.preferences.BravePreferenceFragment;
 import org.chromium.ui.UiUtils;
 import org.chromium.ui.widget.ButtonCompat;
 
@@ -63,7 +64,7 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * Settings fragment to enable Sync and other services that communicate with Google.
  */
-public class SyncAndServicesPreferences extends PreferenceFragment
+public class SyncAndServicesPreferences extends BravePreferenceFragment
         implements PassphraseDialogFragment.Listener, Preference.OnPreferenceChangeListener,
                    ProfileSyncService.SyncStateChangedListener, Preferences.OnBackPressedListener {
     private static final String IS_FROM_SIGNIN_SCREEN =

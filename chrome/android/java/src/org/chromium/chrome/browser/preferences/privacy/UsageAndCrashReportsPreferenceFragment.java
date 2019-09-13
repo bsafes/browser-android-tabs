@@ -14,12 +14,13 @@ import org.chromium.chrome.browser.metrics.UmaSessionStats;
 import org.chromium.chrome.browser.preferences.ChromeSwitchPreference;
 import org.chromium.chrome.browser.preferences.PrefServiceBridge;
 import org.chromium.chrome.browser.preferences.PreferenceUtils;
+import org.chromium.chrome.browser.preferences.BravePreferenceFragment;
 
 /**
  * Fragment to manage the Usage and crash reports preference and to explain to
  * the user what it does.
  */
-public class UsageAndCrashReportsPreferenceFragment extends PreferenceFragment {
+public class UsageAndCrashReportsPreferenceFragment extends BravePreferenceFragment {
     private static final String PREF_USAGE_AND_CRASH_REPORTS_SWITCH =
             "usage_and_crash_reports_switch";
 

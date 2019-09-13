@@ -16,6 +16,7 @@ import org.chromium.chrome.browser.ntp.snippets.SnippetsBridge;
 import org.chromium.chrome.browser.preferences.website.ContentSettingsResources;
 import org.chromium.chrome.browser.preferences.website.SingleCategoryPreferences;
 import org.chromium.chrome.browser.preferences.website.SiteSettingsCategory;
+import org.chromium.chrome.browser.preferences.BravePreferenceFragment;
 import org.chromium.chrome.browser.profiles.Profile;
 
 /**
@@ -23,7 +24,7 @@ import org.chromium.chrome.browser.profiles.Profile;
  * notification channels at the top level and links to website specific notifications. This is only
  * used on pre-O devices, devices on Android O+ will link to the Android notification settings.
  */
-public class NotificationsPreferences extends PreferenceFragment {
+public class NotificationsPreferences extends BravePreferenceFragment {
     // These are package-private to be used in tests.
     static final String PREF_FROM_WEBSITES = "from_websites";
     static final String PREF_SUGGESTIONS = "content_suggestions";

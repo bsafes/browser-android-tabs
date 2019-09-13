@@ -17,12 +17,13 @@ import org.chromium.chrome.browser.autofill.PersonalDataManager.AutofillProfile;
 import org.chromium.chrome.browser.customtabs.CustomTabActivity;
 import org.chromium.chrome.browser.preferences.MainPreferences;
 import org.chromium.chrome.browser.preferences.PreferenceUtils;
+import org.chromium.chrome.browser.preferences.BravePreferenceFragment;
 
 /**
  * Fragment for settings page that allows user to view and edit a single server-provided address.
  */
 public class AutofillServerProfilePreferences
-        extends PreferenceFragment implements OnPreferenceClickListener {
+        extends BravePreferenceFragment implements OnPreferenceClickListener {
     private String mGUID;
 
     private static final String PREF_SERVER_PROFILE_DESCRIPTION = "server_profile_description";

@@ -22,12 +22,13 @@ import org.chromium.chrome.browser.preferences.ChromeSwitchPreference;
 import org.chromium.chrome.browser.preferences.PrefServiceBridge;
 import org.chromium.chrome.browser.preferences.PreferenceUtils;
 import org.chromium.chrome.browser.profiles.Profile;
+import org.chromium.chrome.browser.preferences.BravePreferenceFragment;
 import org.chromium.ui.widget.Toast;
 
 /**
  * Fragment to keep track of the translate preferences.
  */
-public class TranslatePreferences extends PreferenceFragment {
+public class TranslatePreferences extends BravePreferenceFragment {
 
     public static final String PREF_TRANSLATE_SWITCH = "translate_switch";
     public static final String PREF_RESET_TRANSLATE_BUTTON = "reset_translate_button";
