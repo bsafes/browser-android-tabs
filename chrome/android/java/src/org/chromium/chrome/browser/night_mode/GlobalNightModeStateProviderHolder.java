@@ -57,14 +57,8 @@ public class GlobalNightModeStateProviderHolder {
      */
     public static NightModeStateProvider getInstance() {
         if (sInstance == null) {
-            if (CommandLine.getInstance().hasSwitch(ChromeSwitches.FORCE_ENABLE_NIGHT_MODE)
-                    || !NightModeUtils.isNightModeSupported()
-                    || !FeatureUtilities.isNightModeAvailable()) {
-                sInstance = new DummyNightModeStateProvider();
-            } else {
-                sInstance = new GlobalNightModeStateController(SystemNightModeMonitor.getInstance(),
+            sInstance = new GlobalNightModeStateController(SystemNightModeMonitor.getInstance(),
                         ChromePreferenceManager.getInstance());
-            }
         }
         return sInstance;
     }
