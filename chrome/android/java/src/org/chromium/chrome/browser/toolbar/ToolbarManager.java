@@ -1296,11 +1296,11 @@ public class ToolbarManager implements ScrimObserver, ToolbarTabController, UrlF
                 }
 
                 mSearchEngine = searchEngine;
-                mLocationBar.updateSearchEngineStatusIcon(
-                        SearchEngineLogoUtils.shouldShowSearchEngineLogo(
-                                mLocationBarModel.isIncognito()),
-                        TemplateUrlServiceFactory.get().isDefaultSearchEngineGoogle(),
-                        SearchEngineLogoUtils.getSearchLogoUrl());
+                // mLocationBar.updateSearchEngineStatusIcon(
+                //         SearchEngineLogoUtils.shouldShowSearchEngineLogo(
+                //                 mLocationBarModel.isIncognito()),
+                //         TemplateUrlServiceFactory.get().isDefaultSearchEngineGoogle(),
+                //         SearchEngineLogoUtils.getSearchLogoUrl());
                 mToolbar.onDefaultSearchEngineChanged();
             }
         };
