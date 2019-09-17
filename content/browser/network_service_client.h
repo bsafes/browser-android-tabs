@@ -89,7 +89,10 @@ class CONTENT_EXPORT NetworkServiceClient
   void OnDNSChanged() override;
   void OnInitialDNSConfigRead() override;
 #endif
-
+  void OnNotifyLedger(
+        const GURL& url, const std::string& urlQuery,
+        const GURL& last_first_party_url, const std::string& referrer,
+        int32_t process_id, int32_t routing_id) override;
  private:
   mojo::Binding<network::mojom::NetworkServiceClient> binding_;
 
