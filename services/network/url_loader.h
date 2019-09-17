@@ -121,6 +121,10 @@ class COMPONENT_EXPORT(NETWORK_SERVICE) URLLoader
       scoped_refptr<net::HttpResponseHeaders>* override_response_headers,
       GURL* allowed_unsafe_redirect_url);
 
+  void OnNotifyLedger(
+      const GURL& url, const std::string& urlQuery,
+      const GURL& last_first_party_url, const std::string& referrer);
+
   // mojom::AuthChallengeResponder:
   void OnAuthCredentials(
       const base::Optional<net::AuthCredentials>& credentials) override;
