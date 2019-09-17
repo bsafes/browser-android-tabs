@@ -333,13 +333,6 @@ void ProfileIOData::InitializeOnUIThread(Profile* profile) {
   signed_exchange_enabled_.MoveToSequence(
       base::CreateSingleThreadTaskRunnerWithTraits({BrowserThread::IO}));
 
-  // ChromeNetworkDelegate::InitializePrefsOnUIThread(
-  //     &enable_httpse_,
-  //     &enable_tracking_protection_,
-  //     &enable_ad_block_,
-  //     &enable_ad_block_regional_,
-  //     pref_service);
-
   scoped_refptr<base::SingleThreadTaskRunner> io_task_runner =
       base::CreateSingleThreadTaskRunnerWithTraits({BrowserThread::IO});
 
