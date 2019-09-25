@@ -51,7 +51,7 @@ public class OnboardingPrefManager {
 
     private static final List<String> adsAvailableRegions = Arrays.asList("US","CA","NZ","IE","AU","CA","FR","GB","DE");
 
-    private static final List<String> newAdsAvailableRegions = Arrays.asList(); //Add country code for new ad regions in the list
+    private static final List<String> newAdsAvailableRegions = Arrays.asList("AT"); //Add country code for new ad regions in the list
 
     private static final String GOOGLE = "Google";
     private static final String DUCKDUCKGO = "DuckDuckGo";

@@ -66,18 +66,18 @@ public final class DualControlLayout extends ViewGroup {
             Context context, boolean isPrimary, String text, OnClickListener listener) {
         if (isPrimary) {
             ButtonCompat primaryButton =
-                    new ButtonCompat(context, R.style.FilledButtonThemeOverlay_Flat);
+                    new ButtonCompat(context, R.style.BraveFilledButtonThemeOverlay_Flat);
             primaryButton.setId(R.id.button_primary);
             primaryButton.setOnClickListener(listener);
             primaryButton.setText(text);
             return primaryButton;
         } else {
-            Button secondaryButton = new ButtonCompat(context, R.style.TextButtonThemeOverlay);
+            Button secondaryButton = new ButtonCompat(context, R.style.BraveTextButtonThemeOverlay);
             secondaryButton.setId(R.id.button_secondary);
             secondaryButton.setOnClickListener(listener);
             secondaryButton.setText(text);
             ApiCompatibilityUtils.setTextAppearance(
-                    secondaryButton, R.style.TextAppearance_BlueButtonText2);
+                    secondaryButton, R.style.TextAppearance_BraveButtonText);
             return secondaryButton;
         }
     }

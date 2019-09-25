@@ -25,6 +25,6 @@
         android:layout_margin="@dimen/clear_browsing_data_button_margin"
         android:focusable="true"
         android:text="@string/clear_data_delete"
-        style="@style/FilledButton.Flat" />
+        style="@style/BraveFilledButton.Flat" />
 
 </LinearLayout>

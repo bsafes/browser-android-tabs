@@ -13,4 +13,4 @@
     android:layout_width="wrap_content"
     android:minHeight="40dp"
     android:focusable="false"
-    style="@style/FilledButton" />
+    style="@style/BraveFilledButton" />

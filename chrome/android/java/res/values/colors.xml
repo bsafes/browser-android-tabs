@@ -78,7 +78,7 @@
     <color name="distilled_page_prefs_unselected">@color/popup_bg_color</color>
 
     <!-- Preferences Colors -->
-    <color name="pref_accent_color">@color/light_active_color</color>
+    <color name="pref_accent_color">@color/brave_theme_color</color>
 
     <!-- Data Saver Colors -->
     <color name="data_reduction_compressed_color">#E1E1E1</color>

@@ -205,7 +205,7 @@
     <style name="Theme.Chromium.ModalDialog" parent="Theme.Chromium.AlertDialog">
         <item name="android:windowFrame">@null</item>
         <item name="android:backgroundDimAmount">0.65</item>
-        <item name="buttonBarButtonStyle">@style/TextButton</item>
+        <item name="buttonBarButtonStyle">@style/BraveTextButton</item>
         <item name="android:windowSoftInputMode">adjustResize|stateHidden</item>
     </style>
 
@@ -332,7 +332,7 @@
 
     <!-- Alert dialog styles -->
     <style name="AlertDialogButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
-        <item name="android:textAppearance">@style/TextAppearance.BlueButtonText2</item>
+        <item name="android:textAppearance">@style/TextAppearance.BraveButtonText</item>
     </style>
 
     <!-- Styled to match BlackHeadline but setup to override values in the app compat parent theme.
@@ -414,7 +414,7 @@
         <item name="android:dividerPadding">0dp</item>
         <item name="android:showDividers">middle</item>
     </style>
-    <style name="ButtonBarButton" parent="@style/TextButton">
+    <style name="ButtonBarButton" parent="@style/BraveTextButton">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
@@ -717,7 +717,7 @@
         <item name="android:textAppearance">@style/TextAppearance.BlackBody</item>
         <item name="android:layout_gravity">start</item>
     </style>
-    <style name="SigninButtonBorderlessRegular" parent="@style/TextButton">
+    <style name="SigninButtonBorderlessRegular" parent="@style/BraveTextButton">
         <item name="android:paddingStart">0dp</item>
         <item name="android:paddingEnd">0dp</item>
         <item name="android:textAppearance">@style/TextAppearance.BlueLink2</item>
@@ -826,7 +826,7 @@
         <item name="android:textAppearance">
             @style/TextAppearance.DataUsageBreakdownColumnLabel</item>
     </style>
-    <style name="TextAppearance.DataUsageBreakdownSavedColumnLabel" parent="@style/TextAppearance.BlueButtonText2">
+    <style name="TextAppearance.DataUsageBreakdownSavedColumnLabel" parent="@style/TextAppearance.BraveButtonText">
         <item name="android:textAllCaps">false</item>
     </style>
     <style name="DataUsageBreakdownSavedColumnLabel" parent="DataUsageBreakdownColumnLabel">
@@ -888,7 +888,7 @@
         <item name="android:ellipsize">end</item>
         <item name="leading">16sp</item>
     </style>
-    <style name="SuggestionCardAction" parent="@style/TextButton">
+    <style name="SuggestionCardAction" parent="@style/BraveTextButton">
         <item name="android:minHeight">48dp</item>
     </style>
 
@@ -898,7 +898,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <style name="TextAppearance.PasswordEntryName" parent="TextAppearance.BlueButtonText2">
+    <style name="TextAppearance.PasswordEntryName" parent="TextAppearance.BraveButtonText">
         <item name="android:textAllCaps">false</item>
     </style>
 
@@ -1014,4 +1014,32 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">14sp</item>
     </style>
+
+    <style name="BraveFilledButtonThemeOverlay">
+        <item name="android:buttonStyle">@style/BraveFilledButton</item>
+    </style>
+    <style name="BraveFilledButtonThemeOverlay.Flat" tools:ignore="UnusedResources">
+        <item name="android:buttonStyle">@style/BraveFilledButton.Flat</item>
+    </style>
+    <style name="BraveTextButtonThemeOverlay" tools:ignore="UnusedResources">
+        <item name="android:buttonStyle">@style/BraveTextButton</item>
+    </style>
+
+    <style name="BraveFilledButton" parent="FilledButton">
+        <item name="buttonColor">@color/brave_filled_button_bg</item>
+    </style>
+
+    <style name="BraveFilledButton.Flat" parent="BraveFilledButton">
+        <item name="buttonRaised">false</item>
+    </style>
+
+    <style name="BraveTextButton" parent="TextButton" tools:ignore="UnusedResources">
+        <item name="android:textAppearance">@style/TextAppearance.BraveButtonText</item>
+    </style>
+
+    <style name="TextAppearance.BraveButtonText" parent="TextAppearance.AccentMediumStyle">
+        <item name="android:textColor">@color/brave_when_enabled</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
 </resources>
