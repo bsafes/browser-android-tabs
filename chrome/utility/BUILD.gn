@@ -27,7 +27,7 @@ static_library("utility") {
   public_deps = []
   deps = [
     "//base",
-    "//brave/components/services/bat_ledger:lib",
+    "//brave/utility",
     "//chrome:resources",
     "//chrome:strings",
     "//chrome/common",
@@ -224,10 +224,6 @@ static_library("utility") {
       "//services/content/simple_browser",
       "//services/content/simple_browser/public/mojom",
     ]
-  }
-
-  if (brave_ads_enabled) {
-    deps += [ "//brave/components/services/bat_ads:lib" ]
   }
 }
 
