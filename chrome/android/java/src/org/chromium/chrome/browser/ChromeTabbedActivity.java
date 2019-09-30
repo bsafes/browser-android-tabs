@@ -654,20 +654,20 @@ public class ChromeTabbedActivity
 
                 @Override
                 public void didCloseTab(int tabId, boolean incognito) {
-                    closeIfNoTabsAndHomepageEnabled(false);
+                    closeIfNoTabsAndCloseAppWithZeroTabsEnabled(false);
                 }
 
                 @Override
                 public void tabPendingClosure(Tab tab) {
-                    closeIfNoTabsAndHomepageEnabled(true);
+                    closeIfNoTabsAndCloseAppWithZeroTabsEnabled(true);
                 }
 
                 @Override
                 public void tabRemoved(Tab tab) {
-                    closeIfNoTabsAndHomepageEnabled(false);
+                    closeIfNoTabsAndCloseAppWithZeroTabsEnabled(false);
                 }
 
-                private void closeIfNoTabsAndHomepageEnabled(boolean isPendingClosure) {
+                private void closeIfNoTabsAndCloseAppWithZeroTabsEnabled(boolean isPendingClosure) {
                     if (getTabModelSelector().getTotalTabCount() == 0) {
                         // If the last tab is closed, and one of the following is true, then exit
                         // Chrome:
@@ -682,6 +682,10 @@ public class ChromeTabbedActivity
                         } else if (isPendingClosure) {
                             NewTabPageUma.recordNTPImpression(
                                     NewTabPageUma.NTP_IMPESSION_POTENTIAL_NOTAB);
+                        } else {
+                             // createInitialTab();
+                            getTabModelSelector().getModel(false).commitAllTabClosures();
+                            getCurrentTabCreator().launchNTP();
                         }
                     }
 
