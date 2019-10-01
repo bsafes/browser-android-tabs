@@ -36,6 +36,6 @@
         android:layout_marginHorizontal="@dimen/experimental_explore_sites_margin"
         android:layout_marginBottom="@dimen/experimental_explore_sites_spacing"
         android:text="@string/ntp_explore_sites_more"
-        style="@style/TextButton" />
+        style="@style/BraveTextButton" />
 
 </LinearLayout>

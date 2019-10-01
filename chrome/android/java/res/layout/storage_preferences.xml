@@ -44,5 +44,5 @@
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
         android:text="@string/storage_clear_button_title"
-        style="@style/TextButton" />
+        style="@style/BraveTextButton" />
 </LinearLayout>

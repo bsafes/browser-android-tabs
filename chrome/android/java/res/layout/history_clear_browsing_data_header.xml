@@ -22,7 +22,7 @@
             android:paddingEnd="@dimen/list_item_default_margin"
             android:gravity="center_vertical|start"
             android:text="@string/open_clear_browsing_data_dialog_button"
-            style="@style/TextButton" />
+            style="@style/BraveTextButton" />
 
         <View style="@style/HorizontalDivider" />
 

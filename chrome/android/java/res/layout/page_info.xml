@@ -116,7 +116,7 @@
         android:paddingEnd="@dimen/page_info_popup_button_padding_sides"
         android:paddingStart="@dimen/page_info_popup_button_padding_sides"
         android:text="@string/page_info_site_settings_button"
-        style="@style/TextButton" />
+        style="@style/BraveTextButton" />
 
     <org.chromium.ui.widget.ButtonCompat
         android:id="@+id/page_info_open_online_button"
@@ -129,5 +129,5 @@
         android:paddingEnd="@dimen/page_info_popup_button_padding_sides"
         android:paddingStart="@dimen/page_info_popup_button_padding_sides"
         android:text="@string/page_info_open_online_button"
-        style="@style/TextButton" />
+        style="@style/BraveTextButton" />
 </LinearLayout>

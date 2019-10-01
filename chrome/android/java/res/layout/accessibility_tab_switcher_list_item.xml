@@ -44,7 +44,7 @@
             android:textAlignment="viewStart"
             android:text="@string/accessibility_tab_switcher_undo_tab_closed"
             android:contentDescription="@string/accessibility_tab_switcher_undo_tab_closed"
-            style="@style/TextButton" />
+            style="@style/BraveTextButton" />
     </LinearLayout>
 
 </org.chromium.chrome.browser.widget.accessibility.AccessibilityTabModelListItem>

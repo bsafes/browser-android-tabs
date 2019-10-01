@@ -54,7 +54,7 @@
         android:paddingStart="8dp"
         android:paddingEnd="8dp"
         android:text="@string/contextual_search_no_thanks_button"
-        style="@style/TextButton" />
+        style="@style/BraveTextButton" />
 
     <View
         android:layout_below="@id/contextual_search_allow_button"

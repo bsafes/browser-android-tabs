@@ -41,7 +41,7 @@ public class RestartWorker {
     }
 
     public static void AskForRelaunchCustom(Context context) {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context, R.style.Theme_Chromium_AlertDialog);
          alertDialogBuilder
             .setTitle(R.string.reset_brave_rewards_error_title)
             .setMessage(R.string.reset_brave_rewards_error_description)

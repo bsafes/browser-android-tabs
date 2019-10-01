@@ -23,7 +23,7 @@
 
         <org.chromium.ui.widget.ButtonCompat
             android:id="@+id/cancel_button"
-            style="@style/TextButton"
+            style="@style/BraveTextButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/cancel"/>

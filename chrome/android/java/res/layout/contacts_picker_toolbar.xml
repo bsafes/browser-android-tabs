@@ -31,6 +31,6 @@
             android:layout_height="wrap_content"
             android:enabled="false"
             android:text="@string/done"
-            style="@style/TextButton" />
+            style="@style/BraveTextButton" />
     </LinearLayout>
 </org.chromium.chrome.browser.contacts_picker.ContactsPickerToolbar>

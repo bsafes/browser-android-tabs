@@ -267,7 +267,7 @@ public class SnackbarView {
         }
 
         assert snackbar.getTheme() == Snackbar.Theme.BASIC;
-        return R.style.TextButton;
+        return R.style.BraveTextButton;
     }
 
     private boolean updateInternal(Snackbar snackbar, boolean animate) {
