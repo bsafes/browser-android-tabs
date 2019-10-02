@@ -66,5 +66,6 @@ source_set("common") {
     "//ui/gfx/ipc/geometry",
     "//ui/gfx/ipc/skia",
     "//url",
+    "//chrome/browser:brave_blockers",
   ]
 }
