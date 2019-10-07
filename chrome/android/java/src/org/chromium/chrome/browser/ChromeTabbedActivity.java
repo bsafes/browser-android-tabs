@@ -683,9 +683,11 @@ public class ChromeTabbedActivity
                             NewTabPageUma.recordNTPImpression(
                                     NewTabPageUma.NTP_IMPESSION_POTENTIAL_NOTAB);
                         } else {
-                             // createInitialTab();
                             getTabModelSelector().getModel(false).commitAllTabClosures();
                             getCurrentTabCreator().launchNTP();
+
+                            for (int i = 0; i < getTabModelSelector().getModel(false).getCount()-1; i++) getTabModelSelector().getModel(false).getTabAt(i).setClosing(true);
+                            while (getTabModelSelector().getModel(false).getCount() > 1) TabModelUtils.closeTabByIndex(getTabModelSelector().getModel(false), 0);
                         }
                     }
 
