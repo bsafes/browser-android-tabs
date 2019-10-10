@@ -490,6 +490,9 @@ public class BookmarkBridge {
      */
     public int getChildCount(BookmarkId id) {
         assert mIsNativeBookmarkModelLoaded;
+        if (!mIsNativeBookmarkModelLoaded) {
+            return 0;
+        }
         return BookmarkBridgeJni.get().getChildCount(
                 mNativeBookmarkBridge, BookmarkBridge.this, id.getId(), id.getType());
     }
