@@ -469,6 +469,9 @@ public class BookmarkBridge {
      */
     public int getChildCount(BookmarkId id) {
         assert mIsNativeBookmarkModelLoaded;
+        if (!mIsNativeBookmarkModelLoaded) {
+            return 0;
+        }
         return nativeGetChildCount(mNativeBookmarkBridge, id.getId(), id.getType());
     }
 
