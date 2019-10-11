@@ -16,6 +16,21 @@ import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import java.util.Calendar;
+import java.util.Date;
 
 import org.chromium.base.TraceEvent;
 import org.chromium.base.VisibleForTesting;
@@ -37,6 +52,8 @@ import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.util.ViewUtils;
 import org.chromium.chrome.browser.widget.displaystyle.UiConfig;
 import org.chromium.chrome.browser.widget.displaystyle.ViewResizer;
+import org.chromium.chrome.browser.rate.RateUtils;
+import org.chromium.chrome.browser.rate.RateDays;
 
 /**
  * The native new tab page, represented by some basic data such as title and url, and an Android
@@ -71,6 +88,15 @@ public class NewTabPageView extends HistoryNavigationLayout {
     private int mSnapshotScrollY;
     private ContextMenuManager mContextMenuManager;
     private SharedPreferences mSharedPreferences;
+
+    private FrameLayout rateLayout, feedbackLayout;
+    private LinearLayout enjoyRateActionLayout, rateBraveActionLayout;
+
+    private TextView rateText;
+    private Button noButton, yesButton, laterButton, rateButton, submitButton;
+    private ImageButton closeButton;
+    private EditText feedbackEditText;
+    private RateUtils rateUtils;
 
     /**
      * Manages the view interaction with the rest of the system.
@@ -248,6 +274,116 @@ public class NewTabPageView extends HistoryNavigationLayout {
         });
 
         manager.addDestructionObserver(NewTabPageView.this::onDestroy);
+
+        // Rate Brave
+
+        rateUtils = RateUtils.getInstance();
+
+        if (rateUtils.getPrefAppOpenCount() == 0){
+            rateUtils.setNextRateDateAndCount();
+        }
+
+        rateLayout = mNewTabPageLayout.findViewById(R.id.rate_layout);
+        feedbackLayout = mNewTabPageLayout.findViewById(R.id.feedback_layout);
+
+        enjoyRateActionLayout = mNewTabPageLayout.findViewById(R.id.enjoy_rate_action_layout);
+        rateBraveActionLayout = mNewTabPageLayout.findViewById(R.id.rate_brave_action_layout);
+
+        rateText = mNewTabPageLayout.findViewById(R.id.rate_text);
+
+        if (rateUtils.shouldShowRate()) {
+            rateLayout.setVisibility(View.VISIBLE);
+        } else {
+            rateUtils.setPrefAppOpenCount();
+        }
+
+        noButton = mNewTabPageLayout.findViewById(R.id.no_button);
+        noButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                enjoyRateActionLayout.setVisibility(View.GONE);
+                feedbackLayout.setVisibility(View.VISIBLE);
+                rateText.setCompoundDrawables(null, null, null, null);
+                rateText.setText(getResources().getString(R.string.how_can_we_improve));
+            }
+        });
+
+        yesButton = mNewTabPageLayout.findViewById(R.id.yes_button);
+        yesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                enjoyRateActionLayout.setVisibility(View.GONE);
+                rateBraveActionLayout.setVisibility(View.VISIBLE);
+                rateText.setCompoundDrawables(null, null, null, null);
+                rateText.setText(getResources().getString(R.string.would_you_mind_leaving_rating));
+            }
+        });
+
+        laterButton = mNewTabPageLayout.findViewById(R.id.later_button);
+        laterButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                rateLayout.setVisibility(View.GONE);
+                rateUtils.setNextRateDateAndCount();
+            }
+        });
+
+        rateButton = mNewTabPageLayout.findViewById(R.id.rate_button);
+        rateButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse("market://details?id=com.brave.browser"));
+                getContext().startActivity(i);
+                rateUtils.setNextRateDateAndCount();
+                rateLayout.setVisibility(View.GONE);
+            }
+        });
+
+        submitButton = mNewTabPageLayout.findViewById(R.id.submit_button);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                feedbackLayout.setVisibility(View.GONE);
+                rateText.setCompoundDrawables(getResources().getDrawable(R.drawable.ic_content_paste_grey600_24dp), null, null, null);
+                rateText.setText(getResources().getString(R.string.thanks_for_feedback));
+                rateUtils.setNextRateDateAndCount();
+            }
+        });
+
+        closeButton = mNewTabPageLayout.findViewById(R.id.rate_close_button);
+        closeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                rateLayout.setVisibility(View.GONE);
+                rateUtils.setNextRateDateAndCount();
+            }
+        });
+
+        feedbackEditText = mNewTabPageLayout.findViewById(R.id.feedback_edit_text);
+        feedbackEditText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                if (charSequence.length() > 0) {
+                    submitButton.setAlpha(1.0f);
+                    submitButton.setEnabled(true);
+                } else {
+                    submitButton.setAlpha(0.5f);
+                    submitButton.setEnabled(false);
+                }
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+
 
         TraceEvent.end(TAG + ".initialize()");
     }

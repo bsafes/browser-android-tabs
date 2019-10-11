@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Copyright 2019 The Brave Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="#D0D2F7"
+    android:visibility="gone">
+
+    <ImageButton
+        android:id="@+id/rate_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/enjoying_brave"
+        android:padding="8dp"
+        android:src="@drawable/btn_close" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:drawableStart="@drawable/ic_content_paste_grey600_24dp"
+            android:drawablePadding="8dp"
+            android:text="@string/enjoying_brave"
+            android:textColor="#242736" />
+
+        <LinearLayout
+            android:id="@+id/enjoy_rate_action_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/no_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_holo"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/ddg_offer_negative"
+                android:textAllCaps="false"
+                android:textColor="#FB542B" />
+
+            <Button
+                android:id="@+id/yes_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_holo"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/ddg_offer_positive"
+                android:textAllCaps="false"
+                android:textColor="#FB542B" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rate_brave_action_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/later_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_holo"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/settings_require_relaunch_later"
+                android:textAllCaps="false"
+                android:textColor="#FB542B" />
+
+            <Button
+                android:id="@+id/rate_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_filled"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="@string/rate"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/feedback_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/feedback_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:hint="@string/write_some_feedback"
+                android:textColor="#242736"
+                android:maxLines="5"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/submit_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|bottom"
+                android:background="@android:color/transparent"
+                android:text="@string/submit"
+                android:enabled="false"
+                android:alpha="0.5"
+                android:textColor="#FB542B" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

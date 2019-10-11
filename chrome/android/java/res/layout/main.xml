@@ -13,6 +13,15 @@
         android:layout_height="match_parent"
         android:layout_weight="1" >
 
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/rate_layout"
+                    android:gravity="bottom"/>
+
+        </FrameLayout>
+
        <include layout="@layout/compositor_view_holder"/>
 
        <FrameLayout

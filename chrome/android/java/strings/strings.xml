@@ -315,4 +315,13 @@ content creators you love.</string>
 
     <string name="settings_exit">Settings exit</string>
 
+    <!-- Rate strings -->
+    <string name="submit">Submit</string>
+    <string name="enjoying_brave">Hey! Are you enjoying Brave?</string>
+    <string name="write_some_feedback">Write some feedback…</string>
+    <string name="rate">Rate</string>
+    <string name="would_you_mind_leaving_rating">Great! Would you mind leaving us a rating on the Play Store?</string>
+    <string name="thanks_for_feedback">Thanks for the feedback!</string>
+    <string name="how_can_we_improve">Sorry to hear that. How can we improve?</string>
+
 </resources>

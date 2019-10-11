@@ -8,7 +8,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ntp_content"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_gravity="center_horizontal"
     android:orientation="vertical"
     android:gravity="center"
@@ -197,4 +197,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:visibility="gone" />
+
+    <include layout="@layout/rate_layout"
+                android:gravity="bottom"/>
 </org.chromium.chrome.browser.ntp.NewTabPageLayout>

@@ -4816,6 +4816,14 @@ content creators you love.
         Welcome Tour
       </message>
 
+      <!-- Rate strings -->
+      <message name="IDS_ENJOYING_BRAVE">Hey! Are you enjoying Brave?</message>
+      <message name="IDS_WRITE_SOME_FEEDBACK">Write some feedback…</message>
+      <message name="IDS_RATE">Rate</message>
+      <message name="IDS_WOULD_YOU_MIND_LEAVING_RATING">Great! Would you mind leaving us a rating on the Play Store?</message>
+      <message name="IDS_THANKS_FOR_FEEDBACK">Thanks for the feedback!</message>
+      <message name="IDS_HOW_CAN_WE_IMPROVE">Sorry to hear that. How can we improve?</message>
+
     </messages>
   </release>
 </grit>
