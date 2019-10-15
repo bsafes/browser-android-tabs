@@ -34,7 +34,6 @@
 #include "base/threading/sequenced_task_runner_handle.h"
 #include "base/threading/thread_task_runner_handle.h"
 #include "brave_src/browser/brave_tab_url_web_contents_observer.h"
-#include "brave/components/brave_ads/browser/buildflags/buildflags.h"
 #include "build/build_config.h"
 #include "chrome/app/builtin_service_manifests.h"
 #include "chrome/app/chrome_content_browser_overlay_manifest.h"
@@ -360,7 +359,6 @@
 #include "components/nacl/broker/nacl_broker_manifest.h"
 #endif
 #endif
-#include "brave/components/services/bat_ledger/public/interfaces/bat_ledger.mojom.h"
 
 #if defined(OS_WIN)
 #include "base/strings/string_tokenizer.h"
@@ -618,8 +616,17 @@
 #include "third_party/blink/public/mojom/page/spatial_navigation.mojom.h"
 #endif
 
+#include "brave/components/brave_ads/browser/buildflags/buildflags.h"
+#include "brave/components/brave_rewards/browser/buildflags/buildflags.h"
+
 #if BUILDFLAG(BRAVE_ADS_ENABLED)
+#include "brave/components/services/bat_ads/public/cpp/manifest.h"
 #include "brave/components/services/bat_ads/public/interfaces/bat_ads.mojom.h"
+#endif
+
+#if BUILDFLAG(BRAVE_REWARDS_ENABLED)
+#include "brave/components/services/bat_ledger/public/cpp/manifest.h"
+#include "brave/components/services/bat_ledger/public/interfaces/bat_ledger.mojom.h"
 #endif
 
 using base::FileDescriptor;
@@ -3992,6 +3999,13 @@ ChromeContentBrowserClient::GetExtraServiceManifests() {
   manifests.push_back(GetNaClBrokerManifest());
 #endif  // defined(OS_WIN)
 #endif  // BUILDFLAG(ENABLE_NACL)
+
+#if BUILDFLAG(BRAVE_ADS_ENABLED)
+  manifests.push_back(bat_ads::GetManifest());
+#endif
+#if BUILDFLAG(BRAVE_REWARDS_ENABLED)
+  manifests.push_back(bat_ledger::GetManifest());
+#endif
 
   return manifests;
 }
