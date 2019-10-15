@@ -15,7 +15,7 @@
     <!-- Control colors for toggles, checkboxes, ratio buttons, list item highlight, and accent.
          Note that these should NOT be used for icon tint. -->
     <color name="control_normal_color">@color/modern_grey_700</color>
-    <color name="light_active_color">@color/modern_blue_600</color>
+    <color name="light_active_color">@color/brave_theme_color</color>
     <color name="control_highlight_color">@color/modern_grey_800_alpha_38</color>
 
     <!-- Other colors -->
