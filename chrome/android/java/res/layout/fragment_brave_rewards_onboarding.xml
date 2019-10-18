@@ -124,7 +124,7 @@
                     android:clickable="true"
                     android:drawableEnd="@drawable/chevron_right"
                     android:focusable="true"
-                    android:text="@string/join"
+                    android:text="@string/turn_on"
                     android:textColor="@color/onboarding_orange" />
 
             </FrameLayout>

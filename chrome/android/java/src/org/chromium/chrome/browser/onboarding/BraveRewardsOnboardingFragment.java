@@ -201,7 +201,7 @@ public class BraveRewardsOnboardingFragment extends Fragment implements View.OnT
                     chkAgreeTerms.setChecked(false);
 
                     btnSkip.setText(getResources().getString(R.string.no_thanks));
-                    btnNext.setText(getResources().getString(R.string.join));
+                    btnNext.setText(getResources().getString(R.string.turn_on));
                     btnNext.setCompoundDrawablesWithIntrinsicBounds(0, 0, R.drawable.chevron_right, 0);
                     btnNext.setTextColor(getResources().getColor(R.color.onboarding_orange));
 

@@ -4796,7 +4796,6 @@ content creators you love.
       <message name="IDS_TERMS_OF_SERVICE" desc="Text for terms of service">Terms of Service</message>
 
       <message name="IDS_AGREE" desc="Text for agree button">Agree</message>
-      <message name="IDS_JOIN" desc="Text for join button">Join</message>
 
       <message name="IDS_START_BROWSING" desc="Text for start browsing button">Start browsing</message>
       <message name="IDS_I_DIDNT_SEE" desc="Text for i didt see it button">I didn&apos;t see an ad</message>
