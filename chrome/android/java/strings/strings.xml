@@ -38,7 +38,7 @@
     <string name="sync_device_failure">Sync could not be setup</string>
     <string name="sync_requires_correct_time">Your computer's clock may be set to the wrong time, or to the wrong time-zone. Check your clock settings</string>
 
-    <string name="brave_stats_text_ads">Ads and Trackers
+    <string name="brave_stats_text_ads">Ads &amp; Trackers
 Blocked</string>
     <string name="brave_stats_text_https">HTTPS
 Upgrades</string>

@@ -4179,7 +4179,7 @@ The site does NOT gain access to the camera. The camera images are only visible 
 
       <!-- Brave stats -->
       <message name="IDS_BRAVE_STATS_TEXT_ADS" desc="Text for blocked ads stats on new tab page.">
-        Ads and Trackers
+        Ads &amp; Trackers
 Blocked
       </message>
       <message name="IDS_BRAVE_STATS_TEXT_HTTPS" desc="Text for upgraded HTTPS stats on new tab page.">
