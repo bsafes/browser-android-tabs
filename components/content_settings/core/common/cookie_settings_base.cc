@@ -80,8 +80,13 @@ bool CookieSettingsBase::IsCookieAccessAllowed(
     const base::Optional<url::Origin>& top_frame_origin) const {
   // TODO(crbug.com/988398): top_frame_origin is not yet always available.
   // Ensure that the DCHECK always passes and remove the FeatureList check.
-  if (!base::FeatureList::IsEnabled(kImprovedCookieControls))
-    return IsCookieAccessAllowed(url, site_for_cookies);
+  if (!base::FeatureList::IsEnabled(kImprovedCookieControls)) {
+    GURL first_party_url = site_for_cookies;
+    if (first_party_url.is_empty()) {
+      first_party_url = top_frame_origin ? top_frame_origin->GetURL() : GURL();
+    }
+    return IsCookieAccessAllowed(url, first_party_url);
+  }
   DCHECK(top_frame_origin || site_for_cookies.is_empty())
       << url << " " << site_for_cookies;
 
