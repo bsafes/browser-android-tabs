@@ -4500,8 +4500,14 @@ watching privacy-respecting ads.
       <message name="IDS_BRAVE_UI_YOUR_WALLET" desc="Your wallet title">
         Your wallet
       </message>
+      <message name="IDS_BRAVE_UI_YOUR_BALANCE" desc="Your balance title">
+        Your balance
+      </message>
       <message name="IDS_BRAVE_UI_BAT_TEXT" desc="A token name">
         BAT
+      </message>
+      <message name="IDS_BRAVE_UI_BAT_POINTS_TEXT" desc="A token name for japan">
+        BAT Points
       </message>
       <message name="IDS_BRAVE_UI_USD" desc="USD value of tokens">
         <ph name="VALUE">%1$s<ex>0.0</ex></ph> USD
@@ -4598,7 +4604,7 @@ month...
         Auto-Contribute
       </message>
       <message name="IDS_BRAVE_UI_REWARDS_CONTRIBUTE_DESCRIPTION" desc="A notication message description about auto-contribute">
-        You've contributed <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> BAT.
+        You've contributed <ph name="BAT_VALUE">%1$s<ex>50</ex></ph>  <ph name="BAT_TEXT">%2$s<ex>BAT</ex></ph>.
       </message>
       <message name="IDS_BRAVE_UI_ONE_TIME_DONATION" desc="A message about one time tips">
         One-time Tips
@@ -4632,7 +4638,7 @@ month...
         Claim
       </message>
       <message name="IDS_BRAVE_UI_RESERVED_AMOUNT_TEXT" desc="A message that some amount of tokens reserved for non verified publishers">
-        You've designated <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> BAT for creators who haven't
+        You've designated <ph name="BAT_VALUE">%1$s<ex>50</ex></ph>  <ph name="BAT_TEXT">%2$s<ex>BAT</ex></ph> for creators who haven't
 yet signed up to receive contributions. Your browser will keep trying to contribute
 until they verify, or until 90 days have passed.
       </message>
@@ -4653,6 +4659,9 @@ until they verify, or until 90 days have passed.
       </message>
       <message name="IDS_BRAVE_UI_GRANTS" desc="Grants button text">
         Grants
+      </message>
+      <message name="IDS_BRAVE_UI_DETAILS" desc="Details button text">
+        Details
       </message>
       <message name="IDS_BRAVE_UI_EXPIRES_ON" desc="A message about grants expiration date">
         expires on <ph name="DATE">%1$s<ex>4/14/2019</ex></ph>

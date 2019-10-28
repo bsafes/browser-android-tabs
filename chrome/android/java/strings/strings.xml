@@ -157,7 +157,9 @@ watching privacy-respecting ads.</string>
     <string name="brave_ui_welcome_footer_text_two">LEARN MORE</string>
     <string name="brave_ui_rewards_creating_text">Creating wallet</string>
     <string name="brave_ui_your_wallet">Your wallet</string>
+    <string name="brave_ui_your_balance">Your balance</string>
     <string name="brave_ui_bat_text">BAT</string>
+    <string name="brave_ui_bat_points_text">BAT Points</string>
     <string name="brave_ui_usd"><ph name="VALUE">%1$s<ex>0.0</ex></ph> USD</string>
     <string name="brave_rewards_local_panel_add_funds">Add Funds</string>
     <string name="brave_ui_settings">Settings</string>
@@ -197,7 +199,7 @@ month...</string>
     <string name="brave_ui_token_grant_claimed">Token Grants Claimed</string>
     <string name="brave_ui_earnings_ads">Earnings from Ads</string>
     <string name="brave_ui_rewards_contribute">Auto-Contribute</string>
-    <string name="brave_ui_rewards_contribute_description">You've contributed <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> BAT.</string>
+    <string name="brave_ui_rewards_contribute_description">You've contributed <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> <ph name="BAT_TEXT">%2$s<ex>BAT</ex></ph>.</string>
     <string name="brave_ui_one_time_donation">One-time Tips</string>
     <string name="brave_ui_recurring_donation">Monthly Tips</string>
     <string name="brave_ui_verified_publisher">Brave Verified Publisher</string>
@@ -209,7 +211,7 @@ month...</string>
     <string name="brave_ui_new_grant">A free token grant is available.</string>
     <string name="brave_ui_new_token_grant">Free Token Grant</string>
     <string name="brave_ui_claim">Claim</string>
-    <string name="brave_ui_reserved_amount_text">You've designated <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> BAT for creators who haven't
+    <string name="brave_ui_reserved_amount_text">You've designated <ph name="BAT_VALUE">%1$s<ex>50</ex></ph>  <ph name="BAT_TEXT">%2$s<ex>BAT</ex></ph> for creators who haven't
 yet signed up to receive contributions. Your browser will keep trying to contribute
 until they verify, or until 90 days have passed.</string>
     <string name="brave_ui_notification_desc_no_funds">Your scheduled monthly payment for Auto-Contribute and monthly tips could not be completed due to insufficient funds. We'll try again in 30 days.</string>
@@ -218,6 +220,7 @@ until they verify, or until 90 days have passed.</string>
     <string name="brave_rewards_local_uh_oh">Uh oh!</string>
     <string name="brave_rewards_local_server_not_responding">The Brave Rewards server is not responding. We will fix this as soon as possible.</string>
     <string name="brave_ui_grants">Grants</string>
+    <string name="brave_ui_details">Details</string>
     <string name="brave_ui_expires_on">expires on <ph name="DATE">%1$s<ex>4/14/2019</ex></ph></string>
     <string name="brave_ui_insufficient_funds_msg">Insufficient Funds</string>
     <string name="brave_ui_insufficient_funds_desc">Your Brave Rewards account is waiting for a deposit.</string>
