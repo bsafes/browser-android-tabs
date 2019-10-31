@@ -4821,7 +4821,9 @@ content creators you love.
       <message name="IDS_SETTINGS_EXIT" desc="Menu text for exit from settings">
         Settings exit
       </message>
-
+      <message name="IDS_BRAVE_LICENSE_TEXT" desc="Title for the Brave License">
+        Brave License
+      </message>
     </messages>
   </release>
 </grit>
