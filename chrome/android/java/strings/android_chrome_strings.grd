@@ -4528,7 +4528,7 @@ watching privacy-respecting ads.
         REWARDS SUMMARY
       </message>
       <message name="IDS_BRAVE_UI_SITE_BANNER_WELCOME" desc="Tipping page title">
-        Thanks for stopping by!
+        Welcome!
       </message>
       <message name="IDS_BRAVE_UI_REWARDS_BANNER_TEXT1" desc="Tipping page description">
         You can support this site by sending a tip. It's a way of thanking them for making great content. Verified content creators get paid for their tips during the first week of each calendar month.
