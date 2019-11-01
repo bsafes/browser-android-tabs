@@ -4099,7 +4099,7 @@ The site does NOT gain access to the camera. The camera images are only visible 
         Scripts Blocked
       </message>
       <message name="IDS_BRAVE_SHIELDS_ADS_TRACKING_SWITCH" desc="Switch for Block Ads and Tracking.">
-        Block Ads and Tracking
+        Block Ads &amp; Tracking
       </message>
       <message name="IDS_BRAVE_SHIELDS_HTTPS_EVERYWHERE_SWITCH" desc="Switch for HTTPS Everywhere.">
         HTTPS Everywhere
@@ -4179,7 +4179,7 @@ The site does NOT gain access to the camera. The camera images are only visible 
 
       <!-- Brave stats -->
       <message name="IDS_BRAVE_STATS_TEXT_ADS" desc="Text for blocked ads stats on new tab page.">
-        Ads and Trackers
+        Ads &amp; Trackers
 Blocked
       </message>
       <message name="IDS_BRAVE_STATS_TEXT_HTTPS" desc="Text for upgraded HTTPS stats on new tab page.">
@@ -4218,7 +4218,7 @@ Saved
         Shields
       </message>
       <message name="IDS_BRAVE_SHIELDS_ADS_AND_TRACKERS" desc="Ads and Trackers blocked.">
-        Ads and Trackers
+        Ads &amp; Trackers
       </message>
       <message name="IDS_BRAVE_SHIELDS_FINGERPRINT_METHODS" desc="Fingerprint methods blocked.">
         Fingerprint Methods
@@ -4787,7 +4787,7 @@ content creators you love.
 
       <message name="IDS_BLOCK" desc="Partial Text for brave shield page">Block</message>
       <message name="IDS_BRAVE_SHIELDS_ONBOARDING_TITLE" desc="Title for brave shield page">Brave Shields</message>
-      <message name="IDS_BRAVE_SHIELDS_ONBOARDING_TEXT" desc="Text for brave shield page">privacy-invading ads and trackers so you can browse without being followed around the web.</message>
+      <message name="IDS_BRAVE_SHIELDS_ONBOARDING_TEXT" desc="Text for brave shield page">privacy-invading ads &amp; trackers so you can browse without being followed around the web.</message>
 
       <message name="IDS_EARN_TOKENS" desc="Partial Text for brave rewards page">Earn tokens</message>
       <message name="IDS_BRAVE_REWARDS_ONBOARDING_TITLE" desc="Title for brave rewards page">Brave Rewards</message>
