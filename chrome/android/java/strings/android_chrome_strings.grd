@@ -4099,7 +4099,7 @@ The site does NOT gain access to the camera. The camera images are only visible 
         Scripts Blocked
       </message>
       <message name="IDS_BRAVE_SHIELDS_ADS_TRACKING_SWITCH" desc="Switch for Block Ads and Tracking.">
-        Block Ads and Tracking
+        Block Ads &amp; Tracking
       </message>
       <message name="IDS_BRAVE_SHIELDS_HTTPS_EVERYWHERE_SWITCH" desc="Switch for HTTPS Everywhere.">
         HTTPS Everywhere
@@ -4179,7 +4179,7 @@ The site does NOT gain access to the camera. The camera images are only visible 
 
       <!-- Brave stats -->
       <message name="IDS_BRAVE_STATS_TEXT_ADS" desc="Text for blocked ads stats on new tab page.">
-        Ads and Trackers
+        Ads &amp; Trackers
 Blocked
       </message>
       <message name="IDS_BRAVE_STATS_TEXT_HTTPS" desc="Text for upgraded HTTPS stats on new tab page.">
@@ -4218,7 +4218,7 @@ Saved
         Shields
       </message>
       <message name="IDS_BRAVE_SHIELDS_ADS_AND_TRACKERS" desc="Ads and Trackers blocked.">
-        Ads and Trackers
+        Ads &amp; Trackers
       </message>
       <message name="IDS_BRAVE_SHIELDS_FINGERPRINT_METHODS" desc="Fingerprint methods blocked.">
         Fingerprint Methods
@@ -4485,7 +4485,7 @@ Save battery and load web pages faster
 the next Internet.
       </message>
       <message name="IDS_BRAVE_UI_WELCOME_DESC_TWO" desc="Get paid for viewing ads and pay it forward to support your favorite content creators.">
-        You can now earn tokens for
+        You can now earn <ph name="TOKEN">%1$s<ex>token</ex></ph>s for
 watching privacy-respecting ads.
       </message>
       <message name="IDS_BRAVE_UI_WELCOME_BUTTON_TEXT_TWO" desc="Button to join Brave Rewards">
@@ -4500,11 +4500,23 @@ watching privacy-respecting ads.
       <message name="IDS_BRAVE_UI_YOUR_WALLET" desc="Your wallet title">
         Your wallet
       </message>
+      <message name="IDS_BRAVE_UI_YOUR_BALANCE" desc="Your balance title">
+        Your balance
+      </message>
       <message name="IDS_BRAVE_UI_BAT_TEXT" desc="A token name">
         BAT
       </message>
+      <message name="IDS_BRAVE_UI_BAP_TEXT" desc="A point name">
+        BAP
+      </message>
+      <message name="IDS_BRAVE_UI_BAT_POINTS_TEXT" desc="A token name for japan">
+        BAT Points
+      </message>
       <message name="IDS_BRAVE_UI_USD" desc="USD value of tokens">
-        <ph name="VALUE">%1$s<ex>0.0</ex></ph> USD
+        <ph name="VALUE">%1$s<ex>0.0</ex></ph>
+      </message>
+      <message name="IDS_BRAVE_UI_USD_TEXT" desc="Text for USD value">
+        USD
       </message>
       <message name="IDS_BRAVE_REWARDS_LOCAL_PANEL_ADD_FUNDS" desc="Add Funds button text">
         Add Funds
@@ -4516,7 +4528,7 @@ watching privacy-respecting ads.
         REWARDS SUMMARY
       </message>
       <message name="IDS_BRAVE_UI_SITE_BANNER_WELCOME" desc="Tipping page title">
-        Thanks for stopping by!
+        Welcome!
       </message>
       <message name="IDS_BRAVE_UI_REWARDS_BANNER_TEXT1" desc="Tipping page description">
         You can support this site by sending a tip. It's a way of thanking them for making great content. Verified content creators get paid for their tips during the first week of each calendar month.
@@ -4540,7 +4552,7 @@ watching privacy-respecting ads.
         set monthly tip
       </message>
       <message name="IDS_BRAVE_UI_NOT_ENOUGH_TOKENS" desc="Message if not enough tokens to make a tip">
-        not enough tokens
+        not enough <ph name="TOKEN">%1$s<ex>token</ex></ph>s
       </message>
       <message name="IDS_BRAVE_UI_SITE_BANNER_NOTICE_TEXT" desc="A message on tipping page when a creator is not verified yet">
         NOTE: This creator has not yet signed up to receive contributions from Brave users. We'll keep trying to contribute until they verify, or until 90 days have passed.
@@ -4591,6 +4603,9 @@ month...
       <message name="IDS_BRAVE_UI_TOKEN_GRANT_CLAIMED" desc="A message about tokens being claimed">
         Token Grants Claimed
       </message>
+      <message name="IDS_BRAVE_UI_POINT_GRANT_CLAIMED" desc="A message about points being claimed">
+        Point Grants Claimed
+      </message>
       <message name="IDS_BRAVE_UI_EARNINGS_ADS" desc="A message about earning from ads">
         Earnings from Ads
       </message>
@@ -4598,7 +4613,7 @@ month...
         Auto-Contribute
       </message>
       <message name="IDS_BRAVE_UI_REWARDS_CONTRIBUTE_DESCRIPTION" desc="A notication message description about auto-contribute">
-        You've contributed <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> BAT.
+        You've contributed <ph name="BAT_VALUE">%1$s<ex>50</ex></ph>  <ph name="BAT_TEXT">%2$s<ex>BAT</ex></ph>.
       </message>
       <message name="IDS_BRAVE_UI_ONE_TIME_DONATION" desc="A message about one time tips">
         One-time Tips
@@ -4623,16 +4638,19 @@ month...
         on Twitch
       </message>
       <message name="IDS_BRAVE_UI_NEW_GRANT" desc="A notification about free token grant">
-        A free token grant is available.
+        A free <ph name="TOKEN">%1$s<ex>token</ex></ph> grant is available.
       </message>
       <message name="IDS_BRAVE_UI_NEW_TOKEN_GRANT" desc="A notification about free token grant">
         Free Token Grant
+      </message>
+      <message name="IDS_BRAVE_UI_NEW_POINT_GRANT" desc="A notification about free point grant">
+        Free Point Grant
       </message>
       <message name="IDS_BRAVE_UI_CLAIM" desc="A claim grant button text">
         Claim
       </message>
       <message name="IDS_BRAVE_UI_RESERVED_AMOUNT_TEXT" desc="A message that some amount of tokens reserved for non verified publishers">
-        You've designated <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> BAT for creators who haven't
+        You've designated <ph name="BAT_VALUE">%1$s<ex>50</ex></ph>  <ph name="BAT_TEXT">%2$s<ex>BAT</ex></ph> for creators who haven't
 yet signed up to receive contributions. Your browser will keep trying to contribute
 until they verify, or until 90 days have passed.
       </message>
@@ -4653,6 +4671,9 @@ until they verify, or until 90 days have passed.
       </message>
       <message name="IDS_BRAVE_UI_GRANTS" desc="Grants button text">
         Grants
+      </message>
+      <message name="IDS_BRAVE_UI_DETAILS" desc="Details button text">
+        Details
       </message>
       <message name="IDS_BRAVE_UI_EXPIRES_ON" desc="A message about grants expiration date">
         expires on <ph name="DATE">%1$s<ex>4/14/2019</ex></ph>
@@ -4784,19 +4805,15 @@ content creators you love.
 
       <message name="IDS_BLOCK" desc="Partial Text for brave shield page">Block</message>
       <message name="IDS_BRAVE_SHIELDS_ONBOARDING_TITLE" desc="Title for brave shield page">Brave Shields</message>
-      <message name="IDS_BRAVE_SHIELDS_ONBOARDING_TEXT" desc="Text for brave shield page">privacy-invading ads and trackers so you can browse without being followed around the web.</message>
+      <message name="IDS_BRAVE_SHIELDS_ONBOARDING_TEXT" desc="Text for brave shield page">privacy-invading ads &amp; trackers so you can browse without being followed around the web.</message>
 
-      <message name="IDS_EARN_TOKENS" desc="Partial Text for brave rewards page">Earn tokens</message>
+      <message name="IDS_EARN_TOKENS" desc="Partial Text for brave rewards page">Earn <ph name="TOKEN">%1$s<ex>token</ex></ph>s</message>
       <message name="IDS_BRAVE_REWARDS_ONBOARDING_TITLE" desc="Title for brave rewards page">Brave Rewards</message>
       <message name="IDS_BRAVE_REWARDS_ONBOARDING_TEXT" desc="Text for brave rewards page">for seeing privacy-respecting ads. Use them to support your favorite sites and creators.</message>
       <message name="IDS_BRAVE_REWARDS_ONBOARDING_TEXT2" desc="Alternate Text for brave rewards page">for seeing privacy-respecting ads.</message>
 
-      <message name="IDS_TERMS_TITLE" desc="Title for terms of service page">Agree to the Terms to use Brave Rewards</message>
-      <message name="IDS_TERMS_TEXT" desc="Text for terms of service page">I agree to Brave Rewards</message>
+      <message name="IDS_TERMS_TEXT" desc="Text for terms of service page">By turning on Rewards, you agree to the</message>
       <message name="IDS_TERMS_OF_SERVICE" desc="Text for terms of service">Terms of Service</message>
-
-      <message name="IDS_AGREE" desc="Text for agree button">Agree</message>
-      <message name="IDS_JOIN" desc="Text for join button">Join</message>
 
       <message name="IDS_START_BROWSING" desc="Text for start browsing button">Start browsing</message>
       <message name="IDS_I_DIDNT_SEE" desc="Text for i didt see it button">I didn&apos;t see an ad</message>
@@ -4807,8 +4824,6 @@ content creators you love.
       <message name="IDS_THIS_IS_YOUR_FIRST_AD" desc="Text brave rewards notification.">This is your first Brave ad. Tap to learn more.</message>
 
       <message name="IDS_TURN_ON" desc="Text for turn on button">Turn On</message>
-
-      <message name="IDS_DO_NOT_AGREE" desc="Text for do not agree button">Do not agree</message>
 
       <message name="IDS_WELCOME_TOUR_DIALOG_TEXT" desc="Text for welcome tour dialog">Relaunching Welcome Tour will not affect any existing settings.</message>
       <message name="IDS_FINISH" desc="Text for finish button">Finish</message>
