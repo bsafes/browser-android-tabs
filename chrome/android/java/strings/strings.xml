@@ -316,5 +316,11 @@ content creators you love.</string>
     <string name="settings_exit">Settings exit</string>
 
     <string name="brave_license_text">Brave License</string>
+    <string name="token">token</string>
+    <string name="point">point</string>
+
+    <string name="one_tip_option">1 <ph name="TIP">%1$s<ex>BAT</ex></ph></string>
+    <string name="five_tip_option">5 <ph name="TIP">%1$s<ex>BAT</ex></ph></string>
+    <string name="ten_tip_option">10 <ph name="TIP">%1$s<ex>BAT</ex></ph></string>
 
 </resources>

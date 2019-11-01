@@ -4824,6 +4824,23 @@ content creators you love.
       <message name="IDS_BRAVE_LICENSE_TEXT" desc="Title for the Brave License">
         Brave License
       </message>
+      <message name="IDS_TOKEN" desc="Text for token">
+        token
+      </message>
+      <message name="IDS_POINT" desc="Text for point">
+        point
+      </message>
+
+      <message name="IDS_ONE_TIP_OPTION" desc="Text for one tip option">
+        1 <ph name="TIP">%1$s<ex>BAT</ex></ph>
+      </message>
+      <message name="IDS_FIVE_TIP_OPTION" desc="Text for five tip option">
+        5 <ph name="TIP">%1$s<ex>BAT</ex></ph>
+      </message>
+      <message name="IDS_TEN_TIP_OPTION" desc="Text for ten tip option">
+        10 <ph name="TIP">%1$s<ex>BAT</ex></ph>
+      </message>
+
     </messages>
   </release>
 </grit>
