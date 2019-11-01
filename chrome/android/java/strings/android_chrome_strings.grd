@@ -4485,7 +4485,7 @@ Save battery and load web pages faster
 the next Internet.
       </message>
       <message name="IDS_BRAVE_UI_WELCOME_DESC_TWO" desc="Get paid for viewing ads and pay it forward to support your favorite content creators.">
-        You can now earn tokens for
+        You can now earn <ph name="TOKEN">%1$s<ex>token</ex></ph>s for
 watching privacy-respecting ads.
       </message>
       <message name="IDS_BRAVE_UI_WELCOME_BUTTON_TEXT_TWO" desc="Button to join Brave Rewards">
@@ -4500,8 +4500,17 @@ watching privacy-respecting ads.
       <message name="IDS_BRAVE_UI_YOUR_WALLET" desc="Your wallet title">
         Your wallet
       </message>
+      <message name="IDS_BRAVE_UI_YOUR_BALANCE" desc="Your balance title">
+        Your balance
+      </message>
       <message name="IDS_BRAVE_UI_BAT_TEXT" desc="A token name">
         BAT
+      </message>
+      <message name="IDS_BRAVE_UI_BAP_TEXT" desc="A point name">
+        BAP
+      </message>
+      <message name="IDS_BRAVE_UI_BAT_POINTS_TEXT" desc="A token name for japan">
+        BAT Points
       </message>
       <message name="IDS_BRAVE_UI_USD" desc="USD value of tokens">
         <ph name="VALUE">%1$s<ex>0.0</ex></ph>
@@ -4543,7 +4552,7 @@ watching privacy-respecting ads.
         set monthly tip
       </message>
       <message name="IDS_BRAVE_UI_NOT_ENOUGH_TOKENS" desc="Message if not enough tokens to make a tip">
-        not enough tokens
+        not enough <ph name="TOKEN">%1$s<ex>token</ex></ph>s
       </message>
       <message name="IDS_BRAVE_UI_SITE_BANNER_NOTICE_TEXT" desc="A message on tipping page when a creator is not verified yet">
         NOTE: This creator has not yet signed up to receive contributions from Brave users. We'll keep trying to contribute until they verify, or until 90 days have passed.
@@ -4594,6 +4603,9 @@ month...
       <message name="IDS_BRAVE_UI_TOKEN_GRANT_CLAIMED" desc="A message about tokens being claimed">
         Token Grants Claimed
       </message>
+      <message name="IDS_BRAVE_UI_POINT_GRANT_CLAIMED" desc="A message about points being claimed">
+        Point Grants Claimed
+      </message>
       <message name="IDS_BRAVE_UI_EARNINGS_ADS" desc="A message about earning from ads">
         Earnings from Ads
       </message>
@@ -4601,7 +4613,7 @@ month...
         Auto-Contribute
       </message>
       <message name="IDS_BRAVE_UI_REWARDS_CONTRIBUTE_DESCRIPTION" desc="A notication message description about auto-contribute">
-        You've contributed <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> BAT.
+        You've contributed <ph name="BAT_VALUE">%1$s<ex>50</ex></ph>  <ph name="BAT_TEXT">%2$s<ex>BAT</ex></ph>.
       </message>
       <message name="IDS_BRAVE_UI_ONE_TIME_DONATION" desc="A message about one time tips">
         One-time Tips
@@ -4626,16 +4638,19 @@ month...
         on Twitch
       </message>
       <message name="IDS_BRAVE_UI_NEW_GRANT" desc="A notification about free token grant">
-        A free token grant is available.
+        A free <ph name="TOKEN">%1$s<ex>token</ex></ph> grant is available.
       </message>
       <message name="IDS_BRAVE_UI_NEW_TOKEN_GRANT" desc="A notification about free token grant">
         Free Token Grant
+      </message>
+      <message name="IDS_BRAVE_UI_NEW_POINT_GRANT" desc="A notification about free point grant">
+        Free Point Grant
       </message>
       <message name="IDS_BRAVE_UI_CLAIM" desc="A claim grant button text">
         Claim
       </message>
       <message name="IDS_BRAVE_UI_RESERVED_AMOUNT_TEXT" desc="A message that some amount of tokens reserved for non verified publishers">
-        You've designated <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> BAT for creators who haven't
+        You've designated <ph name="BAT_VALUE">%1$s<ex>50</ex></ph>  <ph name="BAT_TEXT">%2$s<ex>BAT</ex></ph> for creators who haven't
 yet signed up to receive contributions. Your browser will keep trying to contribute
 until they verify, or until 90 days have passed.
       </message>
@@ -4656,6 +4671,9 @@ until they verify, or until 90 days have passed.
       </message>
       <message name="IDS_BRAVE_UI_GRANTS" desc="Grants button text">
         Grants
+      </message>
+      <message name="IDS_BRAVE_UI_DETAILS" desc="Details button text">
+        Details
       </message>
       <message name="IDS_BRAVE_UI_EXPIRES_ON" desc="A message about grants expiration date">
         expires on <ph name="DATE">%1$s<ex>4/14/2019</ex></ph>
@@ -4789,7 +4807,7 @@ content creators you love.
       <message name="IDS_BRAVE_SHIELDS_ONBOARDING_TITLE" desc="Title for brave shield page">Brave Shields</message>
       <message name="IDS_BRAVE_SHIELDS_ONBOARDING_TEXT" desc="Text for brave shield page">privacy-invading ads &amp; trackers so you can browse without being followed around the web.</message>
 
-      <message name="IDS_EARN_TOKENS" desc="Partial Text for brave rewards page">Earn tokens</message>
+      <message name="IDS_EARN_TOKENS" desc="Partial Text for brave rewards page">Earn <ph name="TOKEN">%1$s<ex>token</ex></ph>s</message>
       <message name="IDS_BRAVE_REWARDS_ONBOARDING_TITLE" desc="Title for brave rewards page">Brave Rewards</message>
       <message name="IDS_BRAVE_REWARDS_ONBOARDING_TEXT" desc="Text for brave rewards page">for seeing privacy-respecting ads. Use them to support your favorite sites and creators.</message>
       <message name="IDS_BRAVE_REWARDS_ONBOARDING_TEXT2" desc="Alternate Text for brave rewards page">for seeing privacy-respecting ads.</message>
@@ -4821,6 +4839,23 @@ content creators you love.
       <message name="IDS_BRAVE_LICENSE_TEXT" desc="Title for the Brave License">
         Brave License
       </message>
+      <message name="IDS_TOKEN" desc="Text for token">
+        token
+      </message>
+      <message name="IDS_POINT" desc="Text for point">
+        point
+      </message>
+
+      <message name="IDS_ONE_TIP_OPTION" desc="Text for one tip option">
+        1 <ph name="TIP">%1$s<ex>BAT</ex></ph>
+      </message>
+      <message name="IDS_FIVE_TIP_OPTION" desc="Text for five tip option">
+        5 <ph name="TIP">%1$s<ex>BAT</ex></ph>
+      </message>
+      <message name="IDS_TEN_TIP_OPTION" desc="Text for ten tip option">
+        10 <ph name="TIP">%1$s<ex>BAT</ex></ph>
+      </message>
+
     </messages>
   </release>
 </grit>
