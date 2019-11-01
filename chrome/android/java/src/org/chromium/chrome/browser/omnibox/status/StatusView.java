@@ -353,7 +353,8 @@ public class StatusView extends LinearLayout {
     private void updateIncognitoBadgeEndPadding() {
         if (mIncognitoBadge == null) return;
 
-        ViewCompat.setPaddingRelative(mIncognitoBadge, ViewCompat.getPaddingStart(mIncognitoBadge),
+        ViewCompat.setPaddingRelative(mIncognitoBadge, 
+                ViewCompat.getPaddingStart(mIncognitoBadge),
                 mIncognitoBadge.getPaddingTop(),
                 mIconRes != 0 ? mIncognitoBadgeEndPaddingWithIcon
                               : mIncognitoBadgeEndPaddingWithoutIcon,
