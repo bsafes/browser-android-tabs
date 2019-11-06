@@ -1388,4 +1388,43 @@
 <translation id="8906569594072556752">የእንኳን ደህና መጡ ጉብኝት</translation>
 <translation id="7808431604191267817">የእንኳን ደህን መጡ ጉብኝትን እንደገና ማስፈንጠር አሁን ባሉ ቅንብሮች ላይ ተጽእኖ አያሳድርም።</translation>
 <translation id="2453860139492968684">ጨርስ</translation>
+<translation id="351823742912624358">ማስታወቂያዎች &amp; ተከታታዮች ታግደዋል</translation>
+<translation id="676626188808136495">ማስታወቂያዎች &amp; ክትትልን አግድ</translation>
+<translation id="6302422639282249274">የ Brave ሽልማቶችን አስተዳድር</translation>
+<translation id="6975719536773320922">ማስታወቂያዎች &amp; ተከታታዮች 
+ታግደዋል</translation>
+<translation id="8158940752709423201">ማስታወቂያዎች &amp; መከታተያዎች</translation>
+<translation id="8508856434435157945">በሞባይል መሳሪያዎ ላይ ወደ ቅንብር ውስጥ ወዳለው ወደ Brave ማሳመሪያ ይሂዱና "የማሳመሪያ ኮድ ስካን አድርግ" የሚለውን ቁልፍ ጠቅ ያድርጉ። ካሜራዎን ተጠቅመው ከዚህ በታች የሚታየውን የ QR ኮድ ስካን ያድርጉ።</translation>
+<translation id="5708254139873333042">ባትሪ ይቆጥቡ እንዲሁም ድረገጾችን በፍጥነት ይክፈቱ። Brave መደበኛ አሳሽዎ እንዲሆን ያድርጉ። ከ Brave የመተግበሪያ ምናሌ ውስጥ "አንደ መደበኛ አሳሽ አቀናብር" የሚለውን ይንኩ። </translation>
+<translation id="5827583267117939716">ከዝርዝሩ ውስጥ Brave የሚለውን ይምረጡ እና "ሁልጊዜ" የሚለውን ይንኩ</translation>
+<translation id="8565174155241544325">አሁን ግለኝነትን የሚያከብሩ ማስታወቂያዎቸን በማየት
+ %1$s ማግኘት ይችላሉ።</translation>
+<translation id="7924320838799747606">ቀሪ ሂሳብዎ</translation>
+<translation id="6160106411363856968">BAP</translation>
+<translation id="1081826981536899387">የ BAP ነጥቦች</translation>
+<translation id="7837083325641186736"><ph name="VALUE" /> </translation>
+<translation id="3826081199286264109">ዩኤስዲ</translation>
+<translation id="1910721550319506122">እንኳን ደህና መጡ!</translation>
+<translation id="3101693828171454453">በቂ የሆነ<ph name="TOKEN" />የለም</translation>
+<translation id="9212459913845238740">የነጥብ ግራንቶችዎን ወስደዋል</translation>
+<translation id="3523149753820792761"><ph name="BAT_VALUE" /><ph name="BAT_TEXT" />አዋጥተዋል።</translation>
+<translation id="5497435273900537730">ነጻ የ<ph name="TOKEN" />ግራንት አለ።</translation>
+<translation id="2132683977638223450">ነጻ የነጥብ ግራንት</translation>
+<translation id="4376933248999950592">ገና ላልተመዘገቡ ፈጣሪዎች <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" /> መድበዋል
+። አሳሽዎ እርስዎ እስከሚያረጋግጡ ወይም 90 ቀን እስሚሞላ ድረስ 
+መዋጮውን ለማድረግ ይሞክራል።</translation>
+<translation id="7997676409547731821">በቂ የሆነ ፈንድ ስለሌዎ የተቀጠረው በራስ ሰር የሚደረገው ወርሀዊ መዋጮዎ ክፍያ ሊጠናቀቅ አልቻለም። በ30 ቀናት ውስጥ እንደገና እንሞክራለን።</translation>
+<translation id="4522570452068850558">ዝርዝሮች</translation>
+<translation id="6393502589311632553">Brave ጥቅም ላይ በማይውልበት ወቅት ማስታወቂያዎችን አሳይ</translation>
+<translation id="4702084935512138078">በድር ላይ ክትትል ሳይደረግብዎ እሰሳ ማድረግ ይችሉ ዘንድ ግለኝነት የሚጥሱ ማስታወቂያዎች &amp; ክትትል ማድረጊያዎች።</translation>
+<translation id="8537217141725709400"><ph name="TOKEN" />ያግኙ</translation>
+<translation id="7396091471805549630">ወደ ሽልማቶች በመመለስዎ፣ ስምምነትዎን እየገለጹ ነው</translation>
+<translation id="7127980134843952133">የአውርድ ታሪክ</translation>
+<translation id="327726072512457161">ከቅንብሮች መውጫ</translation>
+<translation id="597993392929850353">የ Brave ፈቃድ</translation>
+<translation id="1486343603936278248">ቶክን</translation>
+<translation id="8713995420537272453">ነጥብ</translation>
+<translation id="6678056861663824314">1<ph name="TIP" /></translation>
+<translation id="4065726515175370979">5<ph name="TIP" /></translation>
+<translation id="8171148564903208264">10<ph name="TIP" /></translation>
 </translationbundle>

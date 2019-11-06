@@ -1399,4 +1399,31 @@ apoyar a los creadores de contenido que más te gustan.</translation>
 <translation id="2453860139492968684">Terminar</translation>
 <translation id="7127980134843952133">Descargar historial</translation>
 <translation id="327726072512457161">Salir de la configuración</translation>
+<translation id="351823742912624358">Anuncios y rastreadores bloqueados</translation>
+<translation id="676626188808136495">Bloquear anuncios y rastreadores</translation>
+<translation id="6975719536773320922">Anuncios y rastreadores bloqueados</translation>
+<translation id="8158940752709423201">Anuncios y rastreadores</translation>
+<translation id="8565174155241544325">Ahora puede ganar %1$ss por ver anuncios que respetan la privacidad.</translation>
+<translation id="7924320838799747606">Su saldo</translation>
+<translation id="6160106411363856968">BAP</translation>
+<translation id="1081826981536899387">Puntos BAT</translation>
+<translation id="7837083325641186736"><ph name="VALUE" /></translation>
+<translation id="3826081199286264109">USD</translation>
+<translation id="1910721550319506122">¡Bienvenido!</translation>
+<translation id="3101693828171454453">no hay suficientes <ph name="TOKEN" />s</translation>
+<translation id="9212459913845238740">Asignación de puntos solicitada</translation>
+<translation id="3523149753820792761">Ha contribuido con <ph name="BAT_VALUE" /><ph name="BAT_TEXT" />.</translation>
+<translation id="5497435273900537730">Hay disponible una asignación gratuita de <ph name="TOKEN" />.</translation>
+<translation id="2132683977638223450">Asignación de puntos gratuita</translation>
+<translation id="4376933248999950592">Ha reservado <ph name="BAT_VALUE" /><ph name="BAT_TEXT" /> para creadores que todavía no se han registrado para recibir las contribuciones. Su navegador seguirá intentando contribuir hasta que dichos creadores se hayan verificado o hasta que pasen 90 días.</translation>
+<translation id="4522570452068850558">Información</translation>
+<translation id="4702084935512138078">anuncios y rastreadores que invaden la privacidad para que pueda navegar sin que lo sigan por toda la web.</translation>
+<translation id="8537217141725709400">Gane <ph name="TOKEN" />s</translation>
+<translation id="7396091471805549630">Al activar las recompensas, acepta los</translation>
+<translation id="597993392929850353">Licencia de Brave</translation>
+<translation id="1486343603936278248">vale</translation>
+<translation id="8713995420537272453">punto</translation>
+<translation id="6678056861663824314">1 <ph name="TIP" /></translation>
+<translation id="4065726515175370979">5 <ph name="TIP" /></translation>
+<translation id="8171148564903208264">10 <ph name="TIP" /></translation>
 </translationbundle>
