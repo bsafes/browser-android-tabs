@@ -397,15 +397,15 @@ public class LocationBarModel implements ToolbarDataProvider, ToolbarCommonPrope
 
         switch (securityLevel) {
             case ConnectionSecurityLevel.NONE:
-                return isSmallDevice ? 0 : R.drawable.omnibox_info;
+                return isSmallDevice ? 0 : R.drawable.omnibox_info_red;
             case ConnectionSecurityLevel.HTTP_SHOW_WARNING:
-                return R.drawable.omnibox_info;
+                return R.drawable.omnibox_info_red;
             case ConnectionSecurityLevel.DANGEROUS:
-                return R.drawable.omnibox_https_invalid;
+                return R.drawable.omnibox_https_invalid_red;
             case ConnectionSecurityLevel.SECURE_WITH_POLICY_INSTALLED_CERT:
             case ConnectionSecurityLevel.SECURE:
             case ConnectionSecurityLevel.EV_SECURE:
-                return R.drawable.omnibox_https_valid;
+                return R.drawable.omnibox_https_valid_new;
             default:
                 assert false;
         }
