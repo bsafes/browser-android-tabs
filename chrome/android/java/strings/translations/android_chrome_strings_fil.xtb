@@ -1389,4 +1389,44 @@ para suportahan ang mga content creator na gusto mo.</translation>
 <translation id="8906569594072556752">Pang-welcome na Tour</translation>
 <translation id="7808431604191267817">Kapag sinimulang muli ang Pang-welcome na Tour, hindi nito maaapektuhan ang anumang kasalukuyang setting.</translation>
 <translation id="2453860139492968684">Tapos na</translation>
+<translation id="351823742912624358">Bina-block ang Mga Ad at Tracker</translation>
+<translation id="676626188808136495">I-block ang Mga Ad at Tracking</translation>
+<translation id="6302422639282249274">I-manage ang Brave Rewards</translation>
+<translation id="7820683005702098135">Brave Sync (beta)</translation>
+<translation id="6975719536773320922">Bina-block ang Mga Ad at
+Tracker</translation>
+<translation id="8158940752709423201">Mga Ad at Tracker</translation>
+<translation id="8508856434435157945">Sa iyong mobile device, mag-navigate sa Brave Sync sa panel ng Mga Setting at i-click ang button na "I-scan ang Sync Code". Gamitin ang iyong camera para i-scan ang QR Code sa ibaba.</translation>
+<translation id="5708254139873333042">Magtipid ng baterya at mag-load ng mga web page nang mas mabilis. Gawing default na Browser mo ang Brave. Sa Brave menu, i-tap ang "I-set bilang default na browser"</translation>
+<translation id="5827583267117939716">Piliin ang Brave sa listahan at i-tap ang "Palagi"</translation>
+<translation id="8565174155241544325">Makakatanggap ka na ngayon ng mga %1$s para
+sa panonood ng mga ad na gumagalang sa privacy.</translation>
+<translation id="7924320838799747606">Ang iyong balanse</translation>
+<translation id="6160106411363856968">BAP</translation>
+<translation id="1081826981536899387">BAT Points</translation>
+<translation id="7837083325641186736"><ph name="VALUE" /></translation>
+<translation id="3826081199286264109">USD</translation>
+<translation id="1910721550319506122">Welcome!</translation>
+<translation id="3101693828171454453">hindi sapat ang mga <ph name="TOKEN" /></translation>
+<translation id="9212459913845238740">Mga Nakuhang Point Grant</translation>
+<translation id="3523149753820792761">Nag-ambag ka ng <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" />.</translation>
+<translation id="5497435273900537730">May libreng <ph name="TOKEN" /> grant na available.</translation>
+<translation id="2132683977638223450">Libreng Point Grant</translation>
+<translation id="4376933248999950592">Nagtalaga ka ng <ph name="BAT_VALUE" />  <ph name="BAT_TEXT" /> para sa mga creator na hindi
+pa nag-sign up para makatanggap ng mga kontribusyon. Patuloy na susubukan ng iyong browser na mag-ambag
+hanggang sa mag-verify sila, o hanggang lumipas ang 90 araw.</translation>
+<translation id="7997676409547731821">Hindi nakumpleto ang iyong nakaiskedyul na buwanang pagbabayad para sa Auto-Contribute at mga buwanang tip dahil sa hindi sapat na pondo. Susubukan namin ulit makalipas ang 30 araw.</translation>
+<translation id="4522570452068850558">Mga Detalye</translation>
+<translation id="6393502589311632553">Magpakita ng Mga Ad kapag hindi ginagamit ang Brave</translation>
+<translation id="4702084935512138078">mga ad at tracker na nanghihimasok sa privacy nang sa gayon ay makapag-browse ka nang hindi tina-track sa web.</translation>
+<translation id="8537217141725709400">Makakuha ng mga <ph name="TOKEN" /></translation>
+<translation id="7396091471805549630">Sa pamamagitan ng pag-on sa Rewards, sumasang-ayon ka sa</translation>
+<translation id="7127980134843952133">History ng pag-download </translation>
+<translation id="327726072512457161">Pag-exit sa mga setting</translation>
+<translation id="597993392929850353">Brave License</translation>
+<translation id="1486343603936278248">token</translation>
+<translation id="8713995420537272453">point</translation>
+<translation id="6678056861663824314">1 <ph name="TIP" /></translation>
+<translation id="4065726515175370979">5 <ph name="TIP" /></translation>
+<translation id="8171148564903208264">10 <ph name="TIP" /></translation>
 </translationbundle>

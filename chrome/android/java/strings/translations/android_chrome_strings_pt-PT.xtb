@@ -1397,4 +1397,38 @@ os criadores de conteúdo de que adora.</translation>
 <translation id="8906569594072556752">Apresentação de boas-vindas</translation>
 <translation id="7808431604191267817">Voltar a ver a Apresentação de boas-vindas não afeta as definições existentes.</translation>
 <translation id="2453860139492968684">Terminar</translation>
+<translation id="351823742912624358">Anúncios &amp; Rastreadores Bloqueados</translation>
+<translation id="676626188808136495">Bloquear Anúncios &amp; Rastreamento</translation>
+<translation id="6975719536773320922">Anúncios &amp; Rastreadores
+Bloqueado</translation>
+<translation id="8158940752709423201">Anúncios &amp; Rastreadores</translation>
+<translation id="8565174155241544325">Agora pode ganhar %1$ss por
+visualizar anúncios que respeitam a privacidade.</translation>
+<translation id="7924320838799747606">O seu saldo</translation>
+<translation id="6160106411363856968">BAP</translation>
+<translation id="1081826981536899387">Pontos BAT</translation>
+<translation id="7837083325641186736"><ph name="VALUE" /></translation>
+<translation id="3826081199286264109">USD</translation>
+<translation id="1910721550319506122">Bem-vindo(a)!</translation>
+<translation id="3101693828171454453">não existem <ph name="TOKEN" />s suficientes</translation>
+<translation id="9212459913845238740">Subsídios de Pontos Reivindicados</translation>
+<translation id="3523149753820792761">Contribuiu com <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" />.</translation>
+<translation id="5497435273900537730">Está disponível um subsídio de <ph name="TOKEN" /> gratuito.</translation>
+<translation id="2132683977638223450">Subsídio de Pontos Gratuito</translation>
+<translation id="4376933248999950592">Designou <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" /> para criadores que ainda 
+não se inscreveram para receber contribuições. O seu navegador continuará a tentar contribuir
+até serem verificados ou até terem passado 90 dias.</translation>
+<translation id="4522570452068850558">Detalhes</translation>
+<translation id="6393502589311632553">Exibir Anúncios quando Brave não estiver a ser utilizado</translation>
+<translation id="4702084935512138078">anúncios invasivos da privacidade e rastreadores para que possa navegar sem ser seguido na rede.</translation>
+<translation id="8537217141725709400">Ganhe <ph name="TOKEN" />s</translation>
+<translation id="7396091471805549630">Ao ativar Recompensas, concorda com</translation>
+<translation id="7127980134843952133">Transferir histórico</translation>
+<translation id="327726072512457161">Sair de definições</translation>
+<translation id="597993392929850353">Licença Brave</translation>
+<translation id="1486343603936278248">token</translation>
+<translation id="8713995420537272453">ponto</translation>
+<translation id="6678056861663824314">1 <ph name="TIP" /></translation>
+<translation id="4065726515175370979">5 <ph name="TIP" /></translation>
+<translation id="8171148564903208264">10 <ph name="TIP" /></translation>
 </translationbundle>

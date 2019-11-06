@@ -1395,4 +1395,41 @@
 <translation id="8906569594072556752">স্বাগত সফর</translation>
 <translation id="7808431604191267817">স্বাগত সফরের আবার লঞ্চ করা কোনো বিদ্যমান সেটিংসকে ক্ষতিগ্রস্ত করবে না।</translation>
 <translation id="2453860139492968684">শেষ করুন</translation>
+<translation id="351823742912624358">বিজ্ঞাপন &amp; ট্র্যাকারগুলি অবরুদ্ধ করা হয়েছে</translation>
+<translation id="676626188808136495">বিজ্ঞাপন &amp; ট্র্যাকিং অবরুদ্ধ করুন</translation>
+<translation id="6302422639282249274">Brave পুরস্কারগুলি পরিচালনা করুন</translation>
+<translation id="6975719536773320922">বিজ্ঞাপন &amp; ট্র্যাকারগুলি অবরুদ্ধ করা হয়েছে</translation>
+<translation id="8158940752709423201">বিজ্ঞাপন &amp; ট্র্যাকারসমূহ</translation>
+<translation id="5708254139873333042">ব্যাটারি বাঁচান এবং ওয়েব পৃষ্ঠাগুলি আরও দ্রুত লোড করুন। Brave কে আপনার ডিফল্ট ব্রাউজার করুন। Brave মেনু থেকে "ডিফল্ট ব্রাউজার হিসেবে সেট করুন" ট্যাপ করুন</translation>
+<translation id="5827583267117939716">তালিকাটি থেকে Brave নির্বাচন করে "সর্বদা" ট্যাপ করুন</translation>
+<translation id="8565174155241544325">আপনি এখন গোপনীয়তার-মর্যাদা দেওয়া বিজ্ঞাপনগুলি দেখার জন্য
+%1$ss উপার্জন করতে পারবেন।</translation>
+<translation id="7924320838799747606">আপনার ব্যালেন্স</translation>
+<translation id="6160106411363856968">BAP</translation>
+<translation id="1081826981536899387">BAT পয়েন্ট</translation>
+<translation id="7837083325641186736"><ph name="VALUE" /></translation>
+<translation id="3826081199286264109">USD</translation>
+<translation id="1910721550319506122">স্বাগতম!</translation>
+<translation id="3101693828171454453">পর্যাপ্ত <ph name="TOKEN" /> নেই</translation>
+<translation id="9212459913845238740">পয়েন্টের অনুদানগুলি দাবি করা হয়েছে</translation>
+<translation id="3523149753820792761">আপনি <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" /> অবদান রেখেছেন।</translation>
+<translation id="5497435273900537730">একটি বিনামূল্যের <ph name="TOKEN" /> অনুদান উপলভ্য।</translation>
+<translation id="2132683977638223450">বিনামূল্যের পয়েন্ট অনুদান</translation>
+<translation id="4376933248999950592">অবদানগুলি গ্রহণ করতে এখনও সাইন আপ না করা স্রষ্টাদের জন্য আপনাকে <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" /> এর জন্য মনোনীত
+করা হয়েছে। যতক্ষণ না তারা যাচাই করছে, বা
+90 দিন অতিক্রান্ত না হওয়া পর্যন্ত আপনার ব্রাউজার অবদান রাখার চেষ্টা করে যাবে।</translation>
+<translation id="7997676409547731821">অপর্যাপ্ত ফান্ডের জন্য স্বয়ংক্রিয়-অবদান এবং মাসিক পরামর্শের জন্য আপনার সূচিত মাসিক পেমেন্ট সম্পূর্ণ করা গেল না। আমরা 30 দিন পর আবার চেষ্টা করব।</translation>
+<translation id="4522570452068850558">বিশদ</translation>
+<translation id="6393502589311632553">Brave ব্যবহার না হওয়ার সময় বিজ্ঞাপনগুলি দেখান</translation>
+<translation id="4702084935512138078">গোপনীয়তা-বিপন্নকারী বিজ্ঞাপন &amp; ট্র্যাকারসমূহ যাতে ওয়েব জুড়ে আপনি কারোর দ্বারা অনুসৃত না হয়ে ব্রাউজ করতে পারেন।</translation>
+<translation id="8537217141725709400"> <ph name="TOKEN" /> উপার্জন করুন</translation>
+<translation id="7396091471805549630">পুরস্কারগুলি চালু করে, আপনি এতে সম্মত হচ্ছেন</translation>
+<translation id="7127980134843952133">ডাউনলোডের ইতিহাস</translation>
+<translation id="327726072512457161">সেটিংস থেকে প্রস্থান</translation>
+<translation id="597993392929850353">Brave লাইসেন্স</translation>
+<translation id="1486343603936278248">টোকেন</translation>
+<translation id="8713995420537272453">পয়েন্ট</translation>
+<translation id="6678056861663824314">1 <ph name="TIP" /></translation>
+<translation id="4065726515175370979">5 <ph name="TIP" /></translation>
+<translation id="8171148564903208264">10 <ph name="TIP" /></translation>
 </translationbundle>

@@ -1400,4 +1400,36 @@
 <translation id="2453860139492968684">Завершити</translation>
 <translation id="7127980134843952133">Завантажити історію</translation>
 <translation id="327726072512457161">Вихід з налаштувань</translation>
+<translation id="351823742912624358">Реклама &amp; Трекери заблоковані</translation>
+<translation id="676626188808136495">Блокуйте рекламу &amp; трекінг</translation>
+<translation id="6975719536773320922">Реклама &amp; Трекери заблоковані</translation>
+<translation id="8158940752709423201">Реклама &amp; Трекери</translation>
+<translation id="8565174155241544325">Тепер ви можете заробити %1$ss
+за перегляд реклами, яка має правила конфіденційності.</translation>
+<translation id="7924320838799747606">Ваш баланс</translation>
+<translation id="6160106411363856968">BAP</translation>
+<translation id="1081826981536899387">Бали BAT</translation>
+<translation id="7837083325641186736"><ph name="VALUE" /></translation>
+<translation id="3826081199286264109">Доларів США</translation>
+<translation id="1910721550319506122">Ласкаво просимо!</translation>
+<translation id="3101693828171454453">недостатньо <ph name="TOKEN" />ів</translation>
+<translation id="9212459913845238740">Зголошено нарахування балів</translation>
+<translation id="3523149753820792761">Ви зробили свій внесок
+у сумі <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" />.</translation>
+<translation id="5497435273900537730">Доступний безкоштовний <ph name="TOKEN" />-грант.</translation>
+<translation id="2132683977638223450">Безкоштовне нарахування балів</translation>
+<translation id="4376933248999950592">Ви призначили <ph name="BAT_VALUE" />  <ph name="BAT_TEXT" /> для творців, які ще не підписалися на отримання внесків. Ваш веб-переглядач і надалі намагатиметься робити свої внески,
+доки вони не перевірять цю опцію, або поки не мине 90 днів.</translation>
+<translation id="4522570452068850558">Деталі</translation>
+<translation id="4702084935512138078">реклама з посиленими правилами конфіденційності &amp; трекери, щоб ви могли анонімно переглядати інтернет.
+
+</translation>
+<translation id="8537217141725709400">Заробіть <ph name="TOKEN" />и</translation>
+<translation id="7396091471805549630">Увімкнувши нагороди, ви погоджуєтесь на</translation>
+<translation id="597993392929850353">Ліцензія Brave</translation>
+<translation id="1486343603936278248">токен</translation>
+<translation id="8713995420537272453">бал</translation>
+<translation id="6678056861663824314">1 <ph name="TIP" /></translation>
+<translation id="4065726515175370979">5 <ph name="TIP" /></translation>
+<translation id="8171148564903208264">10 <ph name="TIP" /></translation>
 </translationbundle>
