@@ -1401,4 +1401,36 @@
 <translation id="2453860139492968684">समाप्त</translation>
 <translation id="7127980134843952133">हिस्ट्री डाउनलोड करें</translation>
 <translation id="327726072512457161">सेटिंग्स से बाहर निकलें</translation>
+<translation id="351823742912624358">विज्ञापन &amp; ट्रैकर्स को ब्लॉक किया गया</translation>
+<translation id="676626188808136495">विज्ञापन &amp; ब्लॉक करें; ट्रैक किया जा रहा है</translation>
+<translation id="6975719536773320922">विज्ञापन &amp; ट्रैकर्स
+ब्लॉक कर दिए गए हैं</translation>
+<translation id="8158940752709423201">विज्ञापन &amp; ट्रैकर्स</translation>
+<translation id="8565174155241544325">अब आप गोपनीयता-सम्बंधित विज्ञापन 
+देखने के लिए %1$ss अर्जित कर सकते हैं।</translation>
+<translation id="7924320838799747606">आपका बैलेंस</translation>
+<translation id="6160106411363856968">BAP</translation>
+<translation id="1081826981536899387">BAT पॉइंट</translation>
+<translation id="7837083325641186736"><ph name="VALUE" /></translation>
+<translation id="3826081199286264109">USD</translation>
+<translation id="1910721550319506122">स्वागत है!</translation>
+<translation id="3101693828171454453">पर्याप्त <ph name="TOKEN" /> नहीं हैं</translation>
+<translation id="9212459913845238740">प्वाइंट का अनुदान क्लेम किया गया</translation>
+<translation id="3523149753820792761">आपने <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" /> का योगदान दिया है।</translation>
+<translation id="5497435273900537730">एक मुफ़्त <ph name="TOKEN" /> अनुदान उपलब्ध है।</translation>
+<translation id="2132683977638223450">पॉइंट का मुफ़्त अनुदान</translation>
+<translation id="4376933248999950592">जिन निर्माताओं ने योगदान प्राप्त करने के लिए 
+अभी तक साइन उप नहीं किया है आपने उनके लिए <ph name="BAT_VALUE" />  <ph name="BAT_TEXT" /> आबंटित किए हैं। 
+उनके सत्यापन करने तक या 90 दिन बीतने तक आपका ब्राउज़र 
+योगदान देने का प्रयास करता रहेगा।</translation>
+<translation id="4522570452068850558">विवरण</translation>
+<translation id="4702084935512138078">गोपनीयता-अतिक्रमण विज्ञापन &amp; ट्रैकर्स ताकि आप वेब पर किसी के भी द्वारा फ़ोलो किए गए बिना ब्राउज़ कर सकें।</translation>
+<translation id="8537217141725709400"><ph name="TOKEN" /> अर्जित करें</translation>
+<translation id="7396091471805549630">पुरस्कारों को सक्रिय करके आप सहमती प्रदान करते हैं</translation>
+<translation id="597993392929850353">Brave लाइसेंस</translation>
+<translation id="1486343603936278248">टोकन</translation>
+<translation id="8713995420537272453">पॉइंट</translation>
+<translation id="6678056861663824314">1 <ph name="TIP" /></translation>
+<translation id="4065726515175370979">5 <ph name="TIP" /></translation>
+<translation id="8171148564903208264">10 <ph name="TIP" /></translation>
 </translationbundle>

@@ -1146,7 +1146,7 @@
 <translation id="2706462751667573066">Вкл</translation>
 <translation id="4339730410920731698">Реклам или трекеров заблокировано</translation>
 <translation id="2313532038420432247">HTTPS-перенаправлений</translation>
-<translation id="7461425058443653485">Скриптов заблокировано</translation>
+<translation id="7461425058443653485">Блокировано скриптов</translation>
 <translation id="7835726359440951858">Блокировать рекламу и трекинг</translation>
 <translation id="520895744850022668">HTTPS везде</translation>
 <translation id="94154759592465111">Блокировать скрипты</translation>
@@ -1400,4 +1400,35 @@
 <translation id="2453860139492968684">Завершить</translation>
 <translation id="7127980134843952133">История загрузок</translation>
 <translation id="327726072512457161">Выход из настроек</translation>
+<translation id="351823742912624358">Заблокированная реклама и трекеры</translation>
+<translation id="676626188808136495">Блокируйте рекламу и трекеры</translation>
+<translation id="6975719536773320922">Реклама и трекеры
+заблокированы</translation>
+<translation id="8158940752709423201">Реклама и трекеры</translation>
+<translation id="8565174155241544325">Теперь вы можете заработать %1$ss за
+просмотр рекламы, которая уважает вашу конфиденциальность.</translation>
+<translation id="7924320838799747606">Ваш баланс</translation>
+<translation id="6160106411363856968">BAP</translation>
+<translation id="1081826981536899387">Баллы BAT</translation>
+<translation id="7837083325641186736"><ph name="VALUE" /></translation>
+<translation id="3826081199286264109">USD</translation>
+<translation id="1910721550319506122">Добро пожаловать!</translation>
+<translation id="3101693828171454453">недостаточно <ph name="TOKEN" />ов</translation>
+<translation id="9212459913845238740">Получено грантов за баллы</translation>
+<translation id="3523149753820792761">Вы внесли вклад в размере <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" />.</translation>
+<translation id="5497435273900537730">Доступен бесплатный грант в размере <ph name="TOKEN" />ов.</translation>
+<translation id="2132683977638223450">Бесплатный грант за баллы</translation>
+<translation id="4376933248999950592">Вы подарили <ph name="BAT_VALUE" />  <ph name="BAT_TEXT" /> создателям контента, которые
+еще не зарегистрировались для получения вкладов. Ваш браузер продолжит попытки внести вклад
+до тех пор, пока они не подтвердят его или пока не пройдет 90 дней.</translation>
+<translation id="4522570452068850558">Подробности</translation>
+<translation id="4702084935512138078">рекламу и трекеры, нарушающие конфиденциальность, чтобы вы могли просматривать контент, не опасаясь отслеживания на различных сайтах.</translation>
+<translation id="8537217141725709400">Заработайте <ph name="TOKEN" />ов</translation>
+<translation id="7396091471805549630">Включая "Вознаграждения", вы соглашаетесь с</translation>
+<translation id="597993392929850353">Лицензия Brave</translation>
+<translation id="1486343603936278248">токен</translation>
+<translation id="8713995420537272453">балл</translation>
+<translation id="6678056861663824314">1 <ph name="TIP" /></translation>
+<translation id="4065726515175370979">5 <ph name="TIP" /></translation>
+<translation id="8171148564903208264">10 <ph name="TIP" /></translation>
 </translationbundle>
