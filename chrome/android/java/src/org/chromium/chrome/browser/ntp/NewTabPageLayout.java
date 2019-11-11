@@ -23,7 +23,10 @@ import android.view.ViewStub;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.content.SharedPreferences;
 
+import org.chromium.base.ContextUtils;
+import org.chromium.chrome.browser.preferences.BackgroundImagesPreferences;
 import org.chromium.base.TraceEvent;
 import org.chromium.base.VisibleForTesting;
 import org.chromium.chrome.R;
@@ -830,7 +833,12 @@ public class NewTabPageLayout extends LinearLayout implements TileGroup.Observer
     }
 
     private static int getMaxTileRows() {
-        return 2;
+        SharedPreferences sharedPreferences = ContextUtils.getAppSharedPreferences();
+        if(sharedPreferences.getBoolean(BackgroundImagesPreferences.PREF_SHOW_BACKGROUND_IMAGES, true)) {
+            return 1;
+        } else {
+            return 2;
+        }
     }
 
     /**
