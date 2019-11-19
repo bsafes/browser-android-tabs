@@ -149,8 +149,6 @@
 
     <string name="brave_ui_welcome_header_two">የሚቀጥለውን ኢንተርኔት
 ለመሞክር ዝግጁ ይሁኑ።</string>
-    <string name="brave_ui_welcome_desc_two">አሁን ግለኝነትን የሚያከብሩ ማስታወቂያዎቸን በማየት
- %1$s ማግኘት ይችላሉ።</string>
     <string name="brave_ui_welcome_button_text_two">ሽልማትን ይቀላቀሉ</string>
     <string name="brave_ui_welcome_footer_text_two">ተጨማሪ ይማሩ</string>
     <string name="brave_ui_rewards_creating_text">ዋሌት በመፍጠር ላይ</string>

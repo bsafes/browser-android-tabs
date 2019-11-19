@@ -3,7 +3,7 @@
     <string name="brave_settings_title">Ustawienia tarczy Brave dla strony</string>
     <string name="brave_shields_down">Wyłączone</string>
     <string name="brave_shields_up">Włączone</string>
-    <string name="brave_shields_ads_trackers">Reklamy i trackery zablokowane</string>
+    <string name="brave_shields_ads_trackers">Reklamy i skrypty śledzące zablokowane</string>
     <string name="brave_shields_https_upgrades">Aktualizacje HTTPS</string>
     <string name="brave_shields_scripts_blocked">Zablokowane skrypty</string>
     <string name="brave_shields_ads_tracking_switch">Zablokuj reklamy i śledzenie</string>
@@ -38,7 +38,7 @@
     <string name="sync_device_failure">Nie można skonfigurować synchronizacji</string>
     <string name="sync_requires_correct_time">Zegar komputera może być ustawiony na nieprawidłową godzinę lub strefę czasową. Sprawdź ustawienia zegara</string>
 
-    <string name="brave_stats_text_ads">Reklamy i trackery
+    <string name="brave_stats_text_ads">Reklamy i skrypty śledzące
 zablokowane</string>
     <string name="brave_stats_text_https">Aktualizacje
 HTTPS</string>
@@ -56,7 +56,7 @@ zaoszczędzony czas</string>
     <string name="brave_shields_first_group_title">Zablokowane elementy</string>
     <string name="brave_shields_second_group_title">Kontrolery indywidualne</string>
     <string name="brave_shields">Tarcze</string>
-    <string name="brave_shields_ads_and_trackers">Reklamy i trackery</string>
+    <string name="brave_shields_ads_and_trackers">Reklamy i skrypty śledzące</string>
     <string name="brave_shields_fingerprint_methods">Metody odcisków palców</string>
     <string name="brave_shields_block_phishing_switch">Zablokuj phishing</string>
 
@@ -151,7 +151,7 @@ Oszczędzaj baterię dzięki szybszemu ładowaniu stron</string>
 
     <string name="brave_ui_welcome_header_two">Przygotuj się na
 nowe oblicze Internetu.</string>
-    <string name="brave_ui_welcome_desc_two">Teraz możesz zyskać <ph name="TOKEN">%1$s<ex>token</ex></ph> za oglądanie reklam szanujących prywatność.</string>
+    <string name="brave_ui_welcome_desc_two">Teraz możesz zarobić <ph name=\"TOKEN\">%1$s<ex>tokenów</ex></ph> za oglądanie reklam z poszanowaniem prywatności.</string>
     <string name="brave_ui_welcome_button_text_two">DOŁĄCZ DO NAGRÓD</string>
     <string name="brave_ui_welcome_footer_text_two">DOWIEDZ SIĘ WIĘCEJ</string>
     <string name="brave_ui_rewards_creating_text">Tworzenie portfela</string>
@@ -286,7 +286,7 @@ twórcom treści, które lubisz.</string>
 
     <string name="block">Zablokuj</string>
     <string name="brave_shields_onboarding_title">Tarcze Brave</string>
-    <string name="brave_shields_onboarding_text">reklamy naruszające prywatność i trackery, aby móc przeglądać, nie narażając się na śledzenie w sieci.</string>
+    <string name="brave_shields_onboarding_text">reklamy naruszające prywatność i skrypty śledzące, aby móc przeglądać, nie narażając się na śledzenie w sieci.</string>
 
     <string name="earn_tokens">Zyskaj <ph name=\"TOKEN\">%1$s<ex>tokeny</ex></ph></string>
     <string name="brave_rewards_onboarding_title">Nagrody Brave</string>

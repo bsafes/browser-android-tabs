@@ -151,8 +151,7 @@
 
     <string name="brave_ui_welcome_header_two">次世代インターネットを
 体験しましょう。</string>
-    <string name="brave_ui_welcome_desc_two">プライバシーを尊重する広告を視聴して
-<ph name="TOKEN">%1$s<ex>token</ex></ph>を獲得することができます。</string>
+    <string name="brave_ui_welcome_desc_two">プライバシーを尊重する広告を視聴することで<ph name=\"TOKEN\">%1$s<ex>トークン</ex></ph>を獲得できるようになりました。</string>
     <string name="brave_ui_welcome_button_text_two">Rewardsに参加</string>
     <string name="brave_ui_welcome_footer_text_two">詳細</string>
     <string name="brave_ui_rewards_creating_text">ウォレットを作成</string>
@@ -194,7 +193,7 @@
     <string name="brave_ui_month_dec">12月</string>
     <string name="brave_ui_month_year"><ph name=\"MONTH\">%1$s<ex>12月</ex></ph> <ph name=\"YEAR\">%2$s<ex>2018年</ex></ph></string>
     <string name="brave_ui_rewards_contribute_attention">アテンション</string>
-    <string name="brave_ui_include_in_auto">自動支援に含める</string>
+    <string name="brave_ui_include_in_auto">自動支援の対象にする</string>
     <string name="brave_ui_donate_now">チップを送信...</string>
     <string name="brave_ui_no_activity">今月はまだアクティビティが
 ありません...</string>
@@ -285,13 +284,13 @@
     <string name="select_your_default_search_engine">デフォルトの検索エンジンを選択してください</string>
 
     <string name="block">ブロック</string>
-    <string name="brave_shields_onboarding_title">ブレイブシールド</string>
+    <string name="brave_shields_onboarding_title">Brave Shields</string>
     <string name="brave_shields_onboarding_text">プライバシーを侵害する広告 &amp; トラッカーにウェブで追跡されることなく閲覧できます。</string>
 
     <string name="earn_tokens"><ph name=\"TOKEN\">%1$s <ex>トークン</ex> </ph>を獲得</string>
     <string name="brave_rewards_onboarding_title">Brave Rewards</string>
-    <string name="brave_rewards_onboarding_text">プライバシーを尊重する広告を見るために。お気に入りのサイトやクリエイターをサポートするためにそれらを使用してください。</string>
-    <string name="brave_rewards_onboarding_text2">プライバシーを尊重する広告を見るために。</string>
+    <string name="brave_rewards_onboarding_text">プライバシーを尊重する広告を見てポイントを獲得し、お気に入りのサイトやクリエイターを支援することが可能です。</string>
+    <string name="brave_rewards_onboarding_text2">プライバシーを尊重する広告を見てポイントを獲得。</string>
 
     <string name="terms_text">リワードを有効にすることで、次に同意します</string>
     <string name="terms_of_service">利用規約</string>

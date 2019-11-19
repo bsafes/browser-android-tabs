@@ -6,7 +6,7 @@
     <string name="brave_shields_ads_trackers">Reklamlar &amp; Engellenen İzleyiciler</string>
     <string name="brave_shields_https_upgrades">HTTPS Yükseltmeleri</string>
     <string name="brave_shields_scripts_blocked">Betikler Engellendi</string>
-    <string name="brave_shields_ads_tracking_switch">Reklamları &amp; Engelleyin; İzleniyor</string>
+    <string name="brave_shields_ads_tracking_switch">Reklamları &amp Engelleyin; İzleniyor</string>
     <string name="brave_shields_https_everywhere_switch">HTTPS Her yerde</string>
     <string name="brave_shields_blocks_scripts_switch">Betikleri Engelle</string>
     <string name="accessibility_toolbar_btn_brave_shields">Brave Korumalarını Aç/Kapat</string>
@@ -151,7 +151,7 @@ Pilden tasarruf edin ve web sayfalarını daha hızlı yükleyin</string>
 
     <string name="brave_ui_welcome_header_two">İnternetin geleceğini
 deneyimlemeye hazır olun.</string>
-    <string name="brave_ui_welcome_desc_two">Şimdi gizliliğe saygı gösteren reklamları izleyerek %1$s kazanabilirsiniz.</string>
+    <string name="brave_ui_welcome_desc_two">Özele-saygılı reklamları izlediğin için artık <ph name=\"TOKEN\">%1$s<ex>akçe</ex></ph> kazanabilirsin.</string>
     <string name="brave_ui_welcome_button_text_two">ÖDÜLLERE KATIL</string>
     <string name="brave_ui_welcome_footer_text_two">DAHA FAZLASINI ÖĞREN</string>
     <string name="brave_ui_rewards_creating_text">Cüzdan oluşturuluyor</string>

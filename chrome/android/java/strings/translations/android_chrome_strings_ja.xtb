@@ -1304,7 +1304,7 @@ VR を開始する前に、信頼できるサイトかどうかを確認して�
 <translation id="4254029385847607686">12月</translation>
 <translation id="937392350501765664"><ph name="MONTH" /> <ph name="YEAR" /></translation>
 <translation id="3074127054582480056">アテンション</translation>
-<translation id="7335371657242627509">自動支援に含める</translation>
+<translation id="7335371657242627509">自動支援の対象にする</translation>
 <translation id="8918760045046434238">チップを送信...</translation>
 <translation id="1978261665418056203">今月はまだアクティビティが
 ありません...</translation>
@@ -1376,11 +1376,11 @@ VR を開始する前に、信頼できるサイトかどうかを確認して�
 <translation id="986879628471635371">オンボーディングのトラブルシューティング</translation>
 <translation id="1078265935778232285">Braveブラウザにようこそ</translation>
 <translation id="8867511707771147258">デフォルトの検索エンジンを選択してください</translation>
-<translation id="5806601733251372221">ブレイブシールド</translation>
+<translation id="5806601733251372221">Brave Shields</translation>
 <translation id="2880356288762235261">プライバシーを侵害する広告とトラッカー、そのためウェブでたどるられることなくブラウジングできます。</translation>
 <translation id="6980054221517850750">トークンを獲得</translation>
-<translation id="1789842587755069541">プライバシーを尊重する広告を見るために。お気に入りのサイトやクリエイターをサポートするためにそれらを使用してください。</translation>
-<translation id="821707262661492716">プライバシーを尊重する広告を見るために。</translation>
+<translation id="1789842587755069541">プライバシーを尊重する広告を見てポイントを獲得し、お気に入りのサイトやクリエイターを支援することが可能です。</translation>
+<translation id="821707262661492716">プライバシーを尊重する広告を見てポイントを獲得。</translation>
 <translation id="7387657435304445967">Brave Rewardsを使用するために規約に同意する</translation>
 <translation id="53852415493597253">Brave Rewardsに同意します</translation>
 <translation id="4281844954008187215">利用規約</translation>
@@ -1429,6 +1429,5 @@ VR を開始する前に、信頼できるサイトかどうかを確認して�
 <translation id="6678056861663824314">1 <ph name="TIP" /></translation>
 <translation id="4065726515175370979">5 <ph name="TIP" /></translation>
 <translation id="8171148564903208264">10 <ph name="TIP" /></translation>
-<translation id="3540580927110899945">プライバシーを尊重する広告を視聴して
-<ph name="TOKEN" />を獲得することができます。</translation>
+<translation id="3540580927110899945">プライバシーを尊重する広告を視聴することで<ph name="TOKEN" />を獲得できるようになりました。</translation>
 </translationbundle>
