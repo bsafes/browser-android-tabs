@@ -97,7 +97,6 @@
 /gson/lib/
 /gvr-android-sdk/common_library.aar
 /gvr-android-sdk/test-libraries/controller_test_api.aar
-/gvr-android-sdk/libgvr_shim_static_*.a
 /gvr-android-sdk/src
 /gvr-android-sdk/test-apks/daydream_home/*.apk
 /gvr-android-sdk/test-apks/vr_services/*.apk
@@ -161,7 +160,8 @@
 /nasm
 /netty-tcnative/src
 /netty4/src
-/node/linux
+/node/linux/*
+!/node/linux/node-linux-x64.tar.gz.sha1
 /node/mac
 /node/node_modules
 /node/*.tar.gz
@@ -216,7 +216,6 @@
 /syzygy/binaries
 /tsan/
 /ub-uiautomator/lib
-/usb_ids
 /usrsctp/usrsctplib
 /v8-i18n
 /valgrind
