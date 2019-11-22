@@ -59,7 +59,6 @@ public class NewTabPageView extends HistoryNavigationLayout {
 
     private NewTabPageLayout mNewTabPageLayout;
     private ViewGroup mBraveStatsView;
-    private ImageView mBraveStatsShadow;
 
     private NewTabPageManager mManager;
     private Tab mTab;
@@ -204,7 +203,6 @@ public class NewTabPageView extends HistoryNavigationLayout {
                 SuggestionsDependencyFactory.getInstance().getOfflinePageBridge(profile);
 
         mBraveStatsView = (ViewGroup)mNewTabPageLayout.findViewById(R.id.brave_stats);
-        mBraveStatsShadow = (ImageView)mNewTabPageLayout.findViewById(R.id.brave_stats_shadow);
 
         initializeLayoutChangeListener();
         mNewTabPageLayout.setSearchProviderInfo(searchProviderHasLogo, searchProviderIsGoogle);

@@ -85,7 +85,6 @@ public class NewTabPageLayout extends LinearLayout implements TileGroup.Observer
     private View mNoSearchLogoSpacer;
 
     private ViewGroup mBraveStatsView;
-    private ImageView mBraveStatsShadow;
 
     @Nullable
     private View mExploreSectionView; // View is null if explore flag is disabled.
@@ -255,7 +254,6 @@ public class NewTabPageLayout extends LinearLayout implements TileGroup.Observer
         mNoSearchLogoSpacer = findViewById(R.id.no_search_logo_spacer);
 
         mBraveStatsView = (ViewGroup) findViewById(R.id.brave_stats);
-        mBraveStatsShadow = (ImageView) findViewById(R.id.brave_stats_shadow);
 
         initializeSearchBoxTextView();
         initializeVoiceSearchButton();
@@ -561,7 +559,6 @@ public class NewTabPageLayout extends LinearLayout implements TileGroup.Observer
             View child = getChildAt(i);
             if (child == mSiteSectionViewHolder.itemView) break;
             if (child == mBraveStatsView) continue;
-            if (child == mBraveStatsShadow) continue;
 
             // Don't change the visibility of a ViewStub as that will automagically inflate it.
             if (child instanceof ViewStub) continue;
