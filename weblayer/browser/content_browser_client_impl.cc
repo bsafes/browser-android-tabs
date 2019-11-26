@@ -115,10 +115,10 @@ ContentBrowserClientImpl::GetServiceManifestOverlay(base::StringPiece name) {
   return base::nullopt;
 }
 
-std::string ContentBrowserClientImpl::GetUserAgent() {
+std::string ContentBrowserClientImpl::GetUserAgent(const std::string& host) {
   std::string product = "Chrome/";
   product += params_->full_version;
-  return content::BuildUserAgentFromProduct(product);
+  return content::BuildUserAgentFromProduct(product, host);
 }
 
 blink::UserAgentMetadata ContentBrowserClientImpl::GetUserAgentMetadata() {
@@ -153,7 +153,7 @@ ContentBrowserClientImpl::CreateNetworkContext(
   mojo::Remote<network::mojom::NetworkContext> network_context;
   network::mojom::NetworkContextParamsPtr context_params =
       network::mojom::NetworkContextParams::New();
-  context_params->user_agent = GetUserAgent();
+  context_params->user_agent = GetUserAgent("");
   context_params->accept_language = "en-us,en";
   if (!context->IsOffTheRecord()) {
     base::FilePath cookie_path = context->GetPath();
@@ -190,7 +190,7 @@ ContentBrowserClientImpl::CreateURLLoaderThrottles(
       // (especially in multiplatform support).
       // Note: Initialize() needs to happen on UI thread.
       safe_browsing_service_ =
-          std::make_unique<SafeBrowsingService>(GetUserAgent());
+          std::make_unique<SafeBrowsingService>(GetUserAgent(""));
       safe_browsing_service_->Initialize();
     }
 
