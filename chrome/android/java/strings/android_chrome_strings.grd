@@ -4859,8 +4859,6 @@ content creators you love.
         10 <ph name="TIP">%1$s<ex>BAT</ex></ph>
       </message>
 
-      <message name="IDS_PHOTO_BY">Photo by : <ph name="PHOTO_BY">%1$s</ph></message>
-
     </messages>
   </release>
 </grit>

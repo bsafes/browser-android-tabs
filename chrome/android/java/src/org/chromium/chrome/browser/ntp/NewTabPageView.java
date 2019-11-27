@@ -490,9 +490,6 @@ public class NewTabPageView extends HistoryNavigationLayout {
     }
 
     private void showBackgroundImage() {
-
-        TextView creditText = (TextView)mNewTabPageLayout.findViewById(R.id.credit_text);
-
         if(mSharedPreferences.getBoolean(BackgroundImagesPreferences.PREF_SHOW_BACKGROUND_IMAGES, true)) {
             ViewTreeObserver observer = mNewTabPageLayout.getViewTreeObserver();
             observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -531,19 +528,10 @@ public class NewTabPageView extends HistoryNavigationLayout {
                     final BitmapDrawable imageDrawable = new BitmapDrawable(mNewTabPageLayout.getResources(), Bitmap.createBitmap(imageBitmap, startX, (newImageHeight - layoutHeight) / 2, layoutWidth, (int) layoutHeight));
                     mNewTabPageLayout.setBackground(imageDrawable);
 
-                    if (backgroundImage.getImageCredit() != null) {
-                        creditText.setText(String.format(mNewTabPageLayout.getResources().getString(R.string.photo_by, backgroundImage.getImageCredit().getName())));
-                        creditText.setVisibility(View.VISIBLE);
-                    } else {
-                        creditText.setVisibility(View.GONE);
-                    }
-
                     SponsoredImageUtil.imageIndex++;
                     mNewTabPageLayout.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 }
             });
-        } else {
-            creditText.setVisibility(View.GONE);
         }
     }
 
