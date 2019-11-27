@@ -52,6 +52,7 @@ import org.chromium.chrome.browser.ntp.sponsored.BackgroundImage;
 import org.chromium.chrome.browser.ntp.sponsored.SponsoredImage;
 import org.chromium.chrome.browser.ntp.sponsored.SponsoredImageUtil;
 import org.chromium.chrome.browser.util.LocaleUtil;
+import com.bumptech.glide.Glide;
 
 /**
  * The native new tab page, represented by some basic data such as title and url, and an Android
@@ -222,6 +223,9 @@ public class NewTabPageView extends HistoryNavigationLayout {
         mBraveStatsView = (ViewGroup)mNewTabPageLayout.findViewById(R.id.brave_stats);
 
         showBackgroundImage();
+        // ImageView testImage = (ImageView)mNewTabPageLayout.findViewById(R.id.test_image);
+
+        // Glide.with(mNewTabPageLayout.getContext()).load("http://goo.gl/gEgYUd").into(testImage);
 
         // mOrientationListener = new OrientationEventListener(
         //         mNewTabPageLayout.getContext()) {
