@@ -11,6 +11,11 @@ public class BackgroundImage {
         this.imageCredit = imageCredit;
     }
 
+    public BackgroundImage(int imageDrawable, int centerPoint) {
+        this.imageDrawable = imageDrawable;
+        this.centerPoint = centerPoint;
+    }
+
     public int getImageDrawable() {
         return imageDrawable;
     }

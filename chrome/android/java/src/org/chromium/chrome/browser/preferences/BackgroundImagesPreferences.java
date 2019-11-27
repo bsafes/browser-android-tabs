@@ -91,17 +91,17 @@ public class BackgroundImagesPreferences extends BravePreferenceFragment
         }
 
         setOnPreferenceValue(preference.getKey(), (boolean)newValue);
-        // RestartWorker.AskForRelaunch(getActivity());
-        ChromeTabbedActivity chromeTabbedActivity =BraveRewardsHelper.getChromeTabbedActivity();
-        if (chromeTabbedActivity != null) {
-            Tab currentTab = chromeTabbedActivity.getActivityTab();
-            if(currentTab !=null && NewTabPage.isNTPUrl(currentTab.getUrl()) 
-                && chromeTabbedActivity.getTabModelSelector().getCurrentModel().getCount() ==1) {
-                chromeTabbedActivity.getCurrentTabModel().closeTab(currentTab, true, false, true);
-                chromeTabbedActivity.getTabCreator(false).launchNTP();
-                TabModelUtils.closeTabByIndex(chromeTabbedActivity.getCurrentTabModel(), 0);
-            }
-        }
+        RestartWorker.AskForRelaunch(getActivity());
+        // ChromeTabbedActivity chromeTabbedActivity =BraveRewardsHelper.getChromeTabbedActivity();
+        // if (chromeTabbedActivity != null) {
+        //     Tab currentTab = chromeTabbedActivity.getActivityTab();
+        //     if(currentTab !=null && NewTabPage.isNTPUrl(currentTab.getUrl()) 
+        //         && chromeTabbedActivity.getTabModelSelector().getCurrentModel().getCount() ==1) {
+        //         chromeTabbedActivity.getCurrentTabModel().closeTab(currentTab, true, false, true);
+        //         chromeTabbedActivity.getTabCreator(false).launchNTP();
+        //         TabModelUtils.closeTabByIndex(chromeTabbedActivity.getCurrentTabModel(), 0);
+        //     }
+        // }
         return true;
     }
 

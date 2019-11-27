@@ -11,11 +11,19 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.AdapterDataObserver;
 import android.support.v7.widget.RecyclerView.ViewHolder;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.drawable.BitmapDrawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.view.ViewTreeObserver;
+import java.util.Calendar;
+import android.widget.Toast;
+import android.view.OrientationEventListener;
 
 import org.chromium.base.TraceEvent;
 import org.chromium.base.VisibleForTesting;
@@ -39,6 +47,11 @@ import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.util.ViewUtils;
 import org.chromium.chrome.browser.widget.displaystyle.UiConfig;
 import org.chromium.chrome.browser.widget.displaystyle.ViewResizer;
+import org.chromium.chrome.browser.preferences.BackgroundImagesPreferences;
+import org.chromium.chrome.browser.ntp.sponsored.BackgroundImage;
+import org.chromium.chrome.browser.ntp.sponsored.SponsoredImage;
+import org.chromium.chrome.browser.ntp.sponsored.SponsoredImageUtil;
+import org.chromium.chrome.browser.util.LocaleUtil;
 
 /**
  * The native new tab page, represented by some basic data such as title and url, and an Android
@@ -72,6 +85,8 @@ public class NewTabPageView extends HistoryNavigationLayout {
     private int mSnapshotScrollY;
     private ContextMenuManager mContextMenuManager;
     private SharedPreferences mSharedPreferences;
+    private BackgroundImage backgroundImage;
+    private OrientationEventListener mOrientationListener;
 
     /**
      * Manages the view interaction with the rest of the system.
@@ -110,6 +125,8 @@ public class NewTabPageView extends HistoryNavigationLayout {
         super(context, attrs);
 
         mRecyclerView = new NewTabPageRecyclerView(getContext());
+
+        backgroundImage = getBackgroundImage();
 
         // Don't attach now, the recyclerView itself will determine when to do it.
         mNewTabPageLayout = (NewTabPageLayout) LayoutInflater.from(getContext())
@@ -204,6 +221,20 @@ public class NewTabPageView extends HistoryNavigationLayout {
 
         mBraveStatsView = (ViewGroup)mNewTabPageLayout.findViewById(R.id.brave_stats);
 
+        showBackgroundImage();
+
+        // mOrientationListener = new OrientationEventListener(
+        //         mNewTabPageLayout.getContext()) {
+        //     @Override
+        //     public void onOrientationChanged(int orientation) {
+        //         showBackgroundImage();
+        //     }
+        // };
+
+        // if (mOrientationListener.canDetectOrientation()) {          
+        //     mOrientationListener.enable();
+        // }
+
         initializeLayoutChangeListener();
         mNewTabPageLayout.setSearchProviderInfo(searchProviderHasLogo, searchProviderIsGoogle);
 
@@ -216,11 +247,11 @@ public class NewTabPageView extends HistoryNavigationLayout {
         mRecyclerView.setAdapter(newTabPageAdapter);
         mRecyclerView.getLinearLayoutManager().scrollToPosition(scrollPosition);
 
-        mRecyclerViewResizer = ViewResizer.createAndAttach(mRecyclerView, mUiConfig,
-                mRecyclerView.getResources().getDimensionPixelSize(
-                        R.dimen.content_suggestions_card_modern_margin),
-                mRecyclerView.getResources().getDimensionPixelSize(
-                        R.dimen.ntp_wide_card_lateral_margins));
+        // mRecyclerViewResizer = ViewResizer.createAndAttach(mRecyclerView, mUiConfig,
+        //         mRecyclerView.getResources().getDimensionPixelSize(
+        //                 R.dimen.content_suggestions_card_modern_margin),
+        //         mRecyclerView.getResources().getDimensionPixelSize(
+        //                 R.dimen.ntp_wide_card_lateral_margins));
 
         setupScrollHandling();
 
@@ -296,10 +327,21 @@ public class NewTabPageView extends HistoryNavigationLayout {
         long estimatedMillisecondsSaved = (trackersBlockedCount + adsBlockedCount) * MILLISECONDS_PER_ITEM;
         TextView adsBlockedCountTextView = (TextView) mBraveStatsView.findViewById(R.id.brave_stats_text_ads_count);
         TextView httpsUpgradesCountTextView = (TextView) mBraveStatsView.findViewById(R.id.brave_stats_text_https_count);
-        TextView estTimeSavedTextView = (TextView) mBraveStatsView.findViewById(R.id.brave_stats_text_time_count);
+        TextView estTimeSavedCountTextView = (TextView) mBraveStatsView.findViewById(R.id.brave_stats_text_time_count);
         adsBlockedCountTextView.setText(getBraveStatsStringFormNumber(adsBlockedCount));
         httpsUpgradesCountTextView.setText(getBraveStatsStringFormNumber(httpsUpgradesCount));
-        estTimeSavedTextView.setText(getBraveStatsStringFromTime(estimatedMillisecondsSaved / 1000));
+        estTimeSavedCountTextView.setText(getBraveStatsStringFromTime(estimatedMillisecondsSaved / 1000));
+
+        TextView adsBlockedTextView = (TextView) mBraveStatsView.findViewById(R.id.brave_stats_text_ads);
+        TextView httpsUpgradesTextView = (TextView) mBraveStatsView.findViewById(R.id.brave_stats_text_https);
+        TextView estTimeSavedTextView = (TextView) mBraveStatsView.findViewById(R.id.brave_stats_text_time);
+
+        if(mSharedPreferences.getBoolean(BackgroundImagesPreferences.PREF_SHOW_BACKGROUND_IMAGES, true)) {
+            adsBlockedTextView.setTextColor(mNewTabPageLayout.getResources().getColor(android.R.color.white));
+            httpsUpgradesTextView.setTextColor(mNewTabPageLayout.getResources().getColor(android.R.color.white));
+            estTimeSavedTextView.setTextColor(mNewTabPageLayout.getResources().getColor(android.R.color.white));            
+        }
+
         TraceEvent.end(TAG + ".updateBraveStats()");
     }
 
@@ -435,10 +477,88 @@ public class NewTabPageView extends HistoryNavigationLayout {
 
     private void onDestroy() {
         mTab.getWindowAndroid().removeContextMenuCloseListener(mContextMenuManager);
+        // mOrientationListener.disable();
     }
 
     @VisibleForTesting
     public SnapScrollHelper getSnapScrollHelper() {
         return mSnapScrollHelper;
     }
+
+    private void showBackgroundImage() {
+
+        TextView creditText = (TextView)mNewTabPageLayout.findViewById(R.id.credit_text);
+
+        if(mSharedPreferences.getBoolean(BackgroundImagesPreferences.PREF_SHOW_BACKGROUND_IMAGES, true)) {
+            ViewTreeObserver observer = mNewTabPageLayout.getViewTreeObserver();
+            observer.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                @Override
+                public void onGlobalLayout() {
+                    int layoutWidth = mNewTabPageLayout.getMeasuredWidth();
+                    int layoutHeight = mNewTabPageLayout.getMeasuredHeight();
+                    BitmapFactory.Options options = new BitmapFactory.Options();
+                    options.inScaled = false;
+                    Bitmap imageBitmap = BitmapFactory.decodeResource(mNewTabPageLayout.getResources(), backgroundImage.getImageDrawable(), options);
+                    float imageWidth = imageBitmap.getWidth();
+                    float imageHeight = imageBitmap.getHeight();
+                    float centerPoint = backgroundImage.getCenterPoint();
+                    float centerRatio = centerPoint / imageWidth;
+                    float imageWHRatio = imageWidth / imageHeight;
+                    int newImageWidth = (int) (layoutHeight * imageWHRatio);
+                    int newImageHeight = layoutHeight;
+                    if (newImageWidth < layoutWidth) {
+                        // Image is now too small so we need to adjust width and height based on
+                        // This covers landscape and strange tablet sizes.
+                        float imageHWRatio = imageHeight / imageWidth;
+                        newImageWidth = layoutWidth;
+                        newImageHeight = (int) (newImageWidth * imageHWRatio);
+                    }
+                    int newCenter = (int) (newImageWidth * centerRatio);
+                    int startX = (int) (newCenter - (layoutWidth / 2));
+                    if (newCenter < layoutWidth / 2) {
+                        // Need to crop starting at 0 to newImageWidth - left aligned image
+                        startX = 0;
+                    } else if (newImageWidth - newCenter < layoutWidth / 2) {
+                        // Need to crop right side of image - right aligned
+                        startX = newImageWidth - layoutWidth;
+                    }
+                    imageBitmap = Bitmap.createScaledBitmap(imageBitmap, newImageWidth, newImageHeight, true);
+                    // Center vertically, and crop to new center
+                    final BitmapDrawable imageDrawable = new BitmapDrawable(mNewTabPageLayout.getResources(), Bitmap.createBitmap(imageBitmap, startX, (newImageHeight - layoutHeight) / 2, layoutWidth, (int) layoutHeight));
+                    mNewTabPageLayout.setBackground(imageDrawable);
+
+                    if (backgroundImage.getImageCredit() != null) {
+                        creditText.setText(String.format(mNewTabPageLayout.getResources().getString(R.string.photo_by, backgroundImage.getImageCredit().getName())));
+                        creditText.setVisibility(View.VISIBLE);
+                    } else {
+                        creditText.setVisibility(View.GONE);
+                    }
+
+                    SponsoredImageUtil.imageIndex++;
+                    mNewTabPageLayout.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                }
+            });
+        } else {
+            creditText.setVisibility(View.GONE);
+        }
+    }
+
+    private BackgroundImage getBackgroundImage() {
+        BackgroundImage backgroundImage;
+        if (SponsoredImageUtil.imageIndex % 4 ==0 && SponsoredImageUtil.imageIndex != 1) {
+            SponsoredImage sponsoredImage = SponsoredImageUtil.getSponsoredImage(); 
+            long currentTime = Calendar.getInstance().getTimeInMillis();
+            if ((sponsoredImage.getStartDate() <= currentTime  && currentTime <= sponsoredImage.getEndDate()) 
+                && LocaleUtil.isSponsoredRegions()
+                && mSharedPreferences.getBoolean(BackgroundImagesPreferences.PREF_SHOW_SPONSORED_IMAGES, true)) {
+                backgroundImage = sponsoredImage;
+            } else {
+                backgroundImage = SponsoredImageUtil.getBackgroundImage();
+            }
+        } else {
+            backgroundImage = SponsoredImageUtil.getBackgroundImage();
+        }
+        return backgroundImage;
+    }
+
 }
