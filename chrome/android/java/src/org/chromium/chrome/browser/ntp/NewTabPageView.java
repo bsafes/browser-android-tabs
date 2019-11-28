@@ -27,6 +27,7 @@ import android.content.res.Configuration;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.Color;
 import android.app.Activity;
+import android.os.Build;
 
 import org.chromium.base.TraceEvent;
 import org.chromium.base.VisibleForTesting;
@@ -519,10 +520,11 @@ public class NewTabPageView extends HistoryNavigationLayout {
                     // Center vertically, and crop to new center
                     final BitmapDrawable imageDrawable = new BitmapDrawable(mNewTabPageLayout.getResources(), Bitmap.createBitmap(imageBitmap, startX, (newImageHeight - layoutHeight) / 2, layoutWidth, (int) layoutHeight));
 
-
-                    GradientDrawable gradientDrawable =new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,new int[]{ mNewTabPageLayout.getContext().getResources().getColor(R.color.black_alpha_30), Color.TRANSPARENT });
                     mNewTabPageLayout.setBackground(imageDrawable);
-                    mNewTabPageLayout.setForeground(gradientDrawable);
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        GradientDrawable gradientDrawable =new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,new int[]{ mNewTabPageLayout.getContext().getResources().getColor(R.color.black_alpha_30), Color.TRANSPARENT });
+                        mNewTabPageLayout.setForeground(gradientDrawable);
+                    }
 
                     SponsoredImageUtil.imageIndex++;
 
