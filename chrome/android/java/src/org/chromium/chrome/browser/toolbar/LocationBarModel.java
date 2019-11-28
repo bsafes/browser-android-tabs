@@ -399,9 +399,9 @@ public class LocationBarModel implements ToolbarDataProvider, ToolbarCommonPrope
             case ConnectionSecurityLevel.NONE:
                 return 0;
             case ConnectionSecurityLevel.HTTP_SHOW_WARNING:
-                return R.drawable.omnibox_info_red;
-            case ConnectionSecurityLevel.DANGEROUS:
                 return R.drawable.omnibox_https_invalid_red;
+            case ConnectionSecurityLevel.DANGEROUS:
+                return R.drawable.omnibox_info_red;
             case ConnectionSecurityLevel.SECURE_WITH_POLICY_INSTALLED_CERT:
             case ConnectionSecurityLevel.SECURE:
             case ConnectionSecurityLevel.EV_SECURE:
