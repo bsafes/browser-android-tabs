@@ -11,12 +11,6 @@ public class SponsoredImage extends BackgroundImage {
         this.endDate = endDate;
     }
 
-    public SponsoredImage(int imageDrawable, int centerPoint, long startDate, long endDate) {
-        super(imageDrawable, centerPoint);
-        this.startDate = startDate;
-        this.endDate = endDate;
-    }
-
     public long getStartDate() {
         return startDate;
     }

@@ -8,7 +8,7 @@ import java.util.Random;
 import java.util.Calendar;
 
 public class SponsoredImageUtil {
-	
+
 	public static List<BackgroundImage> backgroundImages = new ArrayList<BackgroundImage>(Arrays.asList(
             new BackgroundImage(R.drawable.anders_jilden, 1200, new ImageCredit("Anders Jildén", "https://unsplash.com/@andersjilden?utm_source=unsplash&utm_medium=referral&utm_content=credit")),
             new BackgroundImage(R.drawable.andreas_gucklhorn, 1160, new ImageCredit("Andreas Gücklhorn", "https://unsplash.com/@draufsicht?utm_source=unsplash&utm_medium=referral&utm_content=credit")),
@@ -28,7 +28,7 @@ public class SponsoredImageUtil {
     ));
 
     private static List<SponsoredImage> sponsoredImages = new ArrayList<SponsoredImage>(Arrays.asList(
-    	new SponsoredImage(R.drawable.eaff_ja_soccer_background, 1280, getStartDate().getTimeInMillis(), getEndDate().getTimeInMillis())
+    	new SponsoredImage(R.drawable.eaff_ja_soccer_background, 1280, new ImageCredit("EAFF E-1 Football Championship 2019 Final Korea Republic", "https://eaff.com/competitions/eaff2019/") ,getStartDate().getTimeInMillis(), getEndDate().getTimeInMillis())
     ));
 
 	private static int backgroundImageIndex = getRandomIndex(backgroundImages.size());

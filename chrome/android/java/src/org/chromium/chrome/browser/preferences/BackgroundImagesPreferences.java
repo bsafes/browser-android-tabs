@@ -38,6 +38,7 @@ public class BackgroundImagesPreferences extends BravePreferenceFragment
 
     public static final String PREF_SHOW_BACKGROUND_IMAGES = "show_background_images";
     public static final String PREF_SHOW_SPONSORED_IMAGES = "show_sponsored_images";
+    public static final String PREF_APP_OPEN_COUNT = "app_open_count";
 
     ChromeSwitchPreference showBackgroundImagesPref, showSponsoredImagesPref;
 
@@ -75,7 +76,7 @@ public class BackgroundImagesPreferences extends BravePreferenceFragment
             } else {
                 showSponsoredImagesPref.setEnabled(false);
             }
-            showSponsoredImagesPref.setChecked(sharedPreferences.getBoolean(PREF_SHOW_SPONSORED_IMAGES, false));
+            showSponsoredImagesPref.setChecked(sharedPreferences.getBoolean(PREF_SHOW_SPONSORED_IMAGES, true));
             showSponsoredImagesPref.setOnPreferenceChangeListener(this);
         }
     }
@@ -92,16 +93,6 @@ public class BackgroundImagesPreferences extends BravePreferenceFragment
 
         setOnPreferenceValue(preference.getKey(), (boolean)newValue);
         RestartWorker.AskForRelaunch(getActivity());
-        // ChromeTabbedActivity chromeTabbedActivity =BraveRewardsHelper.getChromeTabbedActivity();
-        // if (chromeTabbedActivity != null) {
-        //     Tab currentTab = chromeTabbedActivity.getActivityTab();
-        //     if(currentTab !=null && NewTabPage.isNTPUrl(currentTab.getUrl()) 
-        //         && chromeTabbedActivity.getTabModelSelector().getCurrentModel().getCount() ==1) {
-        //         chromeTabbedActivity.getCurrentTabModel().closeTab(currentTab, true, false, true);
-        //         chromeTabbedActivity.getTabCreator(false).launchNTP();
-        //         TabModelUtils.closeTabByIndex(chromeTabbedActivity.getCurrentTabModel(), 0);
-        //     }
-        // }
         return true;
     }
 
@@ -111,4 +102,12 @@ public class BackgroundImagesPreferences extends BravePreferenceFragment
         sharedPreferencesEditor.putBoolean(preferenceName, newValue);
         sharedPreferencesEditor.apply();
     }
+
+    public static void setOnPreferenceValue(String preferenceName, int newValue) {
+        SharedPreferences sharedPreferences = ContextUtils.getAppSharedPreferences();
+        SharedPreferences.Editor sharedPreferencesEditor = sharedPreferences.edit();
+        sharedPreferencesEditor.putInt(preferenceName, newValue);
+        sharedPreferencesEditor.apply();
+    }
+
 }

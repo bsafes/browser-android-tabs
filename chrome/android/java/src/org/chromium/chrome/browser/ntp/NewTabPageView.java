@@ -23,11 +23,15 @@ import android.widget.TextView;
 import android.view.ViewTreeObserver;
 import java.util.Calendar;
 import android.widget.Toast;
-import android.view.OrientationEventListener;
+import android.content.res.Configuration;
+import android.graphics.drawable.GradientDrawable;
+import android.graphics.Color;
+import android.app.Activity;
 
 import org.chromium.base.TraceEvent;
 import org.chromium.base.VisibleForTesting;
 import org.chromium.base.ContextUtils;
+import org.chromium.base.ApplicationStatus;
 import org.chromium.chrome.R;
 import org.chromium.chrome.browser.ChromeTabbedActivity;
 import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
@@ -87,7 +91,6 @@ public class NewTabPageView extends HistoryNavigationLayout {
     private ContextMenuManager mContextMenuManager;
     private SharedPreferences mSharedPreferences;
     private BackgroundImage backgroundImage;
-    private OrientationEventListener mOrientationListener;
 
     /**
      * Manages the view interaction with the rest of the system.
@@ -127,11 +130,17 @@ public class NewTabPageView extends HistoryNavigationLayout {
 
         mRecyclerView = new NewTabPageRecyclerView(getContext());
 
-        backgroundImage = getBackgroundImage();
-
         // Don't attach now, the recyclerView itself will determine when to do it.
         mNewTabPageLayout = (NewTabPageLayout) LayoutInflater.from(getContext())
                                     .inflate(R.layout.new_tab_page_layout, mRecyclerView, false);
+        mSharedPreferences = ContextUtils.getAppSharedPreferences();
+        backgroundImage = getBackgroundImage();
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        showBackgroundImage();
     }
 
     /**
@@ -151,7 +160,6 @@ public class NewTabPageView extends HistoryNavigationLayout {
             long constructedTimeNs) {
         TraceEvent.begin(TAG + ".initialize()");
         mTab = tab;
-        mSharedPreferences = ContextUtils.getAppSharedPreferences();
         mManager = manager;
         mUiConfig = new UiConfig(this);
 
@@ -223,21 +231,6 @@ public class NewTabPageView extends HistoryNavigationLayout {
         mBraveStatsView = (ViewGroup)mNewTabPageLayout.findViewById(R.id.brave_stats);
 
         showBackgroundImage();
-        // ImageView testImage = (ImageView)mNewTabPageLayout.findViewById(R.id.test_image);
-
-        // Glide.with(mNewTabPageLayout.getContext()).load("http://goo.gl/gEgYUd").into(testImage);
-
-        // mOrientationListener = new OrientationEventListener(
-        //         mNewTabPageLayout.getContext()) {
-        //     @Override
-        //     public void onOrientationChanged(int orientation) {
-        //         showBackgroundImage();
-        //     }
-        // };
-
-        // if (mOrientationListener.canDetectOrientation()) {          
-        //     mOrientationListener.enable();
-        // }
 
         initializeLayoutChangeListener();
         mNewTabPageLayout.setSearchProviderInfo(searchProviderHasLogo, searchProviderIsGoogle);
@@ -481,7 +474,6 @@ public class NewTabPageView extends HistoryNavigationLayout {
 
     private void onDestroy() {
         mTab.getWindowAndroid().removeContextMenuCloseListener(mContextMenuManager);
-        // mOrientationListener.disable();
     }
 
     @VisibleForTesting
@@ -526,9 +518,14 @@ public class NewTabPageView extends HistoryNavigationLayout {
                     imageBitmap = Bitmap.createScaledBitmap(imageBitmap, newImageWidth, newImageHeight, true);
                     // Center vertically, and crop to new center
                     final BitmapDrawable imageDrawable = new BitmapDrawable(mNewTabPageLayout.getResources(), Bitmap.createBitmap(imageBitmap, startX, (newImageHeight - layoutHeight) / 2, layoutWidth, (int) layoutHeight));
+
+
+                    GradientDrawable gradientDrawable =new GradientDrawable(GradientDrawable.Orientation.TOP_BOTTOM,new int[]{ mNewTabPageLayout.getContext().getResources().getColor(R.color.black_alpha_30), Color.TRANSPARENT });
                     mNewTabPageLayout.setBackground(imageDrawable);
+                    mNewTabPageLayout.setForeground(gradientDrawable);
 
                     SponsoredImageUtil.imageIndex++;
+
                     mNewTabPageLayout.getViewTreeObserver().removeOnGlobalLayoutListener(this);
                 }
             });
@@ -537,12 +534,27 @@ public class NewTabPageView extends HistoryNavigationLayout {
 
     private BackgroundImage getBackgroundImage() {
         BackgroundImage backgroundImage;
-        if (SponsoredImageUtil.imageIndex % 4 ==0 && SponsoredImageUtil.imageIndex != 1) {
+
+        if (mSharedPreferences.getInt(BackgroundImagesPreferences.PREF_APP_OPEN_COUNT, 0) == 2
+            && SponsoredImageUtil.imageIndex == 2) {
             SponsoredImage sponsoredImage = SponsoredImageUtil.getSponsoredImage(); 
             long currentTime = Calendar.getInstance().getTimeInMillis();
             if ((sponsoredImage.getStartDate() <= currentTime  && currentTime <= sponsoredImage.getEndDate()) 
                 && LocaleUtil.isSponsoredRegions()
                 && mSharedPreferences.getBoolean(BackgroundImagesPreferences.PREF_SHOW_SPONSORED_IMAGES, true)) {
+                sponsoredImageClick();
+                return sponsoredImage;
+            }
+        }
+
+        if (SponsoredImageUtil.imageIndex % 4 == 0 && SponsoredImageUtil.imageIndex != 1) {
+            SponsoredImage sponsoredImage = SponsoredImageUtil.getSponsoredImage(); 
+            long currentTime = Calendar.getInstance().getTimeInMillis();
+            if ((sponsoredImage.getStartDate() <= currentTime  && currentTime <= sponsoredImage.getEndDate()) 
+                && LocaleUtil.isSponsoredRegions()
+                && mSharedPreferences.getInt(BackgroundImagesPreferences.PREF_APP_OPEN_COUNT, 0) != 1
+                && mSharedPreferences.getBoolean(BackgroundImagesPreferences.PREF_SHOW_SPONSORED_IMAGES, true)) {
+                sponsoredImageClick();
                 backgroundImage = sponsoredImage;
             } else {
                 backgroundImage = SponsoredImageUtil.getBackgroundImage();
@@ -550,7 +562,22 @@ public class NewTabPageView extends HistoryNavigationLayout {
         } else {
             backgroundImage = SponsoredImageUtil.getBackgroundImage();
         }
+
         return backgroundImage;
     }
 
+    private void sponsoredImageClick() {
+        mNewTabPageLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (Activity ref : ApplicationStatus.getRunningActivities()) {
+                    if (!(ref instanceof ChromeTabbedActivity)) continue;
+                      ChromeTabbedActivity chromeTabbedActivity =  (ChromeTabbedActivity)ref;
+                      if (backgroundImage.getImageCredit() != null) {
+                        chromeTabbedActivity.openNewOrSelectExistingTab(backgroundImage.getImageCredit().getUrl());
+                      } 
+                }
+            }
+        });
+    }
 }
