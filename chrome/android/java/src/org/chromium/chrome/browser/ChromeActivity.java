@@ -207,6 +207,7 @@ import org.chromium.webapk.lib.client.WebApkNavigationClient;
 import org.chromium.webapk.lib.client.WebApkValidator;
 import org.chromium.chrome.browser.onboarding.OnboardingActivity;
 import org.chromium.chrome.browser.onboarding.OnboardingPrefManager;
+import org.chromium.chrome.browser.preferences.BackgroundImagesPreferences;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -1621,6 +1622,9 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
             }
             ClosingTabsManager.getInstance().setClosingTabsOption();
         }
+
+        int appOpenCount = ContextUtils.getAppSharedPreferences().getInt(BackgroundImagesPreferences.PREF_APP_OPEN_COUNT, 0);
+        BackgroundImagesPreferences.setOnPreferenceValue(BackgroundImagesPreferences.PREF_APP_OPEN_COUNT , appOpenCount+1);
 
         mNativeInitialized = true;
         OfflineContentAggregatorNotificationBridgeUiFactory.instance();
