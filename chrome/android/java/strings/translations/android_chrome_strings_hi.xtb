@@ -1433,6 +1433,8 @@
 <translation id="6678056861663824314">1 <ph name="TIP" /></translation>
 <translation id="4065726515175370979">5 <ph name="TIP" /></translation>
 <translation id="8171148564903208264">10 <ph name="TIP" /></translation>
-<translation id="3540580927110899945">अब आप गोपनीयता-सम्बंधित विज्ञापन 
-देखने के लिए <ph name="TOKEN" /> अर्जित कर सकते हैं।</translation>
+<translation id="3540580927110899945">अब आप गोपनीयता सम्बंधित विज्ञापन देखकर <ph name="TOKEN" /> अर्जित कर सकते हैं।</translation>
+<translation id="7781069478569868053">नया टैब पृष्ठ</translation>
+<translation id="8522669544471808198">बैकग्राउंड इमेज दिखाएँ</translation>
+<translation id="3870475560794762985">प्रायोजित इमेज दिखाएँ</translation>
 </translationbundle>

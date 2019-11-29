@@ -1337,7 +1337,7 @@
 <translation id="2775064702681588061">Необходимо пополнить баланс аккаунта Brave Rewards.</translation>
 <translation id="765834632354589737">Резервное копирование кошелька</translation>
 <translation id="1713542052890184975">Создайте резервную копию своего кошелька Brave.</translation>
-<translation id="3333887201479867589">Brave Reward</translation>
+<translation id="3333887201479867589">Brave Rewards</translation>
 <translation id="2012723204723845092">С возвращением!</translation>
 <translation id="7669994301500276741">Получайте токены, пока пользуетесь браузером.</translation>
 <translation id="8203529727745387785">Получайте токены за просмотр рекламы,
@@ -1369,13 +1369,13 @@
 <translation id="6764016175302339802">Рассматривайте этот код как пароль. Если кто-либо получит его, он или она могут сможет просматривать и изменять ваши синхронизированные данные.</translation>
 <translation id="6417420737057016607">Реклама Brave</translation>
 <translation id="8689997599821157251">Вы заработали</translation>
-<translation id="7091885296442320770">Brave молниеносный</translation>
+<translation id="7091885296442320770">Brave - это стремительность молнии</translation>
 <translation id="2171928016777725844">Сделайте Brave своим браузером по умолчанию!</translation>
 <translation id="7136694880210472378">Использовать по умолчанию</translation>
 <translation id="4292832015778676417">заработано от рекламы</translation>
 <translation id="8281886186245836920">Пропустить</translation>
-<translation id="316832010181763471">Введение в поисковую систему</translation>
-<translation id="986879628471635371">Введение в Устранение неполадок</translation>
+<translation id="316832010181763471">Помощь при использовании поисковой системы</translation>
+<translation id="986879628471635371">Помощь в устранении неполадок</translation>
 <translation id="1078265935778232285">Добро пожаловать в браузер Brave</translation>
 <translation id="8867511707771147258">Выберите поисковую систему по умолчанию </translation>
 <translation id="5806601733251372221">Щиты Brave</translation>
@@ -1395,8 +1395,8 @@
 <translation id="6511854390690723657">Это ваша первая реклама Brave. Нажмите, чтобы узнать больше.</translation>
 <translation id="4930714375720679147">Включить</translation>
 <translation id="8329401903432352231">Не могу согласиться</translation>
-<translation id="8906569594072556752">Приветственный тур</translation>
-<translation id="7808431604191267817">Перезапуск Введения не повлияет на существующие настройки.</translation>
+<translation id="8906569594072556752">Обзорный тур</translation>
+<translation id="7808431604191267817">Повторный запуск обзорного тура не повлияет на существующие настройки.</translation>
 <translation id="2453860139492968684">Завершить</translation>
 <translation id="7127980134843952133">История загрузок</translation>
 <translation id="327726072512457161">Выход из настроек</translation>
@@ -1424,7 +1424,7 @@
 <translation id="4522570452068850558">Подробности</translation>
 <translation id="4702084935512138078">рекламу и трекеры, нарушающие конфиденциальность, чтобы вы могли просматривать контент, не опасаясь отслеживания на различных сайтах.</translation>
 <translation id="8537217141725709400">Заработайте <ph name="TOKEN" />ов</translation>
-<translation id="7396091471805549630">Включая "Вознаграждения", вы соглашаетесь с</translation>
+<translation id="7396091471805549630">Включая Brave Rewards, вы принимаете</translation>
 <translation id="597993392929850353">Лицензия Brave</translation>
 <translation id="1486343603936278248">токен</translation>
 <translation id="8713995420537272453">балл</translation>
@@ -1432,4 +1432,7 @@
 <translation id="4065726515175370979">5 <ph name="TIP" /></translation>
 <translation id="8171148564903208264">10 <ph name="TIP" /></translation>
 <translation id="3540580927110899945">Теперь вы можете зарабатывать <ph name="TOKEN" />ы за просмотр рекламы, уважительно относящейся к вашей конфиденциальности.</translation>
+<translation id="7781069478569868053">Страница новой вкладки</translation>
+<translation id="8522669544471808198">Показывать фоновые изображения</translation>
+<translation id="3870475560794762985">Показывать спонсированные изображения</translation>
 </translationbundle>

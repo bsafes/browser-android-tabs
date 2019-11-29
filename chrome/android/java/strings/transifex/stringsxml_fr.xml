@@ -151,7 +151,7 @@ Vous pouvez changer de navigateur par défaut dans les paramètres de votre appl
 
     <string name="brave_ui_welcome_header_two">Préparez-vous à découvrir
 la prochaine évolution d\'Internet.</string>
-    <string name="brave_ui_welcome_desc_two">Vous pouvez désormais gagner des jeton{</ex></ph>s de <ph name=\"TOKEN\">%1$s<ex> en
+    <string name="brave_ui_welcome_desc_two">Vous pouvez désormais gagner des de <ph name=\"TOKEN\">%1$s<ex>jeton</ex></ph>s en
 regardant des annonces respectant la vie privée.</string>
     <string name="brave_ui_welcome_button_text_two">PARTICIPER AU PROGRAMME REWARDS</string>
     <string name="brave_ui_welcome_footer_text_two">EN SAVOIR PLUS</string>
@@ -251,6 +251,9 @@ les créateurs de contenu que vous aimez.</string>
     <string name="prefs_section_display">Affichage</string>
     <string name="prefs_section_controls">Contrôles</string>
     <string name="prefs_appearance">Apparence</string>
+    <string name="prefs_new_tab_page">Nouvel onglet</string>
+    <string name="show_background_images">Afficher les images d\'arrière-plan</string>
+    <string name="show_sponsored_images">Afficher les images sponsorisées</string>
     <string name="hide_brave_rewards_icon_title">Masquer l\'icône Brave Rewards</string>
     <string name="hide_brave_rewards_icon_description">Masque l\'icône Brave Rewards lorsque Brave Rewards n\'est pas activé</string>
     <string name="show_ads_when_brave_is_not_in_use">Afficher les pubs quand Brave n\'est pas utilisé.</string>

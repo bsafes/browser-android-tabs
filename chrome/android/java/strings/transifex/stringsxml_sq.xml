@@ -156,6 +156,7 @@ Internetin e ardhshëm.</string>
     <string name="brave_ui_rewards_creating_text">Krijim portofoli</string>
     <string name="brave_ui_your_wallet">Portofoli juaj</string>
     <string name="brave_ui_bat_text">BAT</string>
+    <string name="brave_ui_usd"><ph name="VALUE">%1$s<ex>0.0</ex></ph></string>
     <string name="brave_ui_usd_text">USD</string>
     <string name="brave_rewards_local_panel_add_funds">Shtoni Fonde</string>
     <string name="brave_ui_settings">Rregullime</string>
@@ -193,6 +194,7 @@ Internetin e ardhshëm.</string>
 muaj…</string>
     <string name="brave_ui_earnings_ads">Fitim nga Reklama</string>
     <string name="brave_ui_rewards_contribute">Vetëkontribut</string>
+    <string name="brave_ui_rewards_contribute_description">Kontribuat <ph name="BAT_VALUE">%1$s<ex>50</ex></ph> <ph name="BAT_TEXT">%2$s<ex>BAT</ex></ph>.</string>
     <string name="brave_ui_one_time_donation">Bakshishe të Një here</string>
     <string name="brave_ui_recurring_donation">Bakshishe të Përmuajshëm</string>
     <string name="brave_ui_verified_publisher">Botues Brave i Verifikuar</string>
@@ -236,6 +238,9 @@ përkrahje të krijuesve të lëndës që doni.</string>
     <string name="prefs_section_display">Shfaqni</string>
     <string name="prefs_section_controls">Kontrolle</string>
     <string name="prefs_appearance">Pamja</string>
+    <string name="prefs_new_tab_page">Faqe e Re Skedë</string>
+    <string name="show_background_images">Shfaq Figura Sfond</string>
+    <string name="show_sponsored_images">Shfaq Figura të Sponsorizuara</string>
     <string name="hide_brave_rewards_icon_title">Fshihni Ikonën e Brave Rewards</string>
     <string name="hide_brave_rewards_icon_description">Fsheh Ikonën e Brave Rewards kur Brave Rewards nuk është i aktivizuar</string>
     <string name="show_ads_when_brave_is_not_in_use">Shfaq Reklama kur Brave s’është në përdorim</string>

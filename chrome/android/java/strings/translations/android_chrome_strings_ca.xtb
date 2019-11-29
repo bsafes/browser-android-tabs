@@ -1398,4 +1398,33 @@ als creadors de contingut que t'agraden.</translation>
 <translation id="2453860139492968684">Finalitza</translation>
 <translation id="7127980134843952133">Descarregar historial</translation>
 <translation id="327726072512457161">Sortir de la configuració</translation>
+<translation id="351823742912624358">Anuncis i sistemes de seguiment bloquejats</translation>
+<translation id="676626188808136495">Anuncis i sistemes de seguiment bloquejats</translation>
+<translation id="6975719536773320922">Anuncis i sistemes de seguiment
+Bloquejat</translation>
+<translation id="8158940752709423201">Anuncis i sistemes de seguiment</translation>
+<translation id="7924320838799747606">El teu saldo</translation>
+<translation id="6160106411363856968">BAP</translation>
+<translation id="1081826981536899387">Punts BAT</translation>
+<translation id="7837083325641186736"><ph name="VALUE" /></translation>
+<translation id="3826081199286264109">USD</translation>
+<translation id="1910721550319506122">Benvinguts!</translation>
+<translation id="3101693828171454453">no suficients <ph name="TOKEN" />s</translation>
+<translation id="9212459913845238740">Punts concedits reclamats</translation>
+<translation id="3523149753820792761">Has contribuït <ph name="BAT_VALUE" /> <ph name="BAT_TEXT" />.</translation>
+<translation id="5497435273900537730">Un cessió gratuïta de <ph name="TOKEN" /> està disponible.</translation>
+<translation id="2132683977638223450">Punts concedits gratuïts</translation>
+<translation id="4376933248999950592">Se t'ha designat <ph name="BAT_VALUE" />  <ph name="BAT_TEXT" /> per creadors que no
+s'hagin registrat per rebre contribucions. El teu navegador seguirà intentant contribuir
+fins que ho verifiquin o fins que hagin passat 90 dies.</translation>
+<translation id="4522570452068850558">Detalls</translation>
+<translation id="4702084935512138078">anuncis i sistemes de seguiment que atempten contra la privadesa, així que pots navegar sense que et segueixin pel web.</translation>
+<translation id="8537217141725709400">Guanya <ph name="TOKEN" />s</translation>
+<translation id="7396091471805549630">En activar les Recompenses, acceptes</translation>
+<translation id="597993392929850353">Llicència Brave</translation>
+<translation id="1486343603936278248">token</translation>
+<translation id="8713995420537272453">punt</translation>
+<translation id="6678056861663824314">1 <ph name="TIP" /></translation>
+<translation id="4065726515175370979">5 <ph name="TIP" /></translation>
+<translation id="8171148564903208264">10 <ph name="TIP" /></translation>
 </translationbundle>

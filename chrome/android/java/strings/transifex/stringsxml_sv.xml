@@ -252,6 +252,9 @@ för att visa ditt stöd för skapare du gillar.</string>
     <string name="prefs_section_display">Visa</string>
     <string name="prefs_section_controls">Styrning</string>
     <string name="prefs_appearance">Utseende</string>
+    <string name="prefs_new_tab_page">Ny flik</string>
+    <string name="show_background_images">Visa bakgrundsbilder</string>
+    <string name="show_sponsored_images">Visa sponsrade bilder</string>
     <string name="hide_brave_rewards_icon_title">Dölj ikonen Brave Rewards</string>
     <string name="hide_brave_rewards_icon_description">Döljer ikonen Brave Rewards när Brave Rewards inte är aktiverad</string>
     <string name="show_ads_when_brave_is_not_in_use">Visa annonser när Brave inte används</string>

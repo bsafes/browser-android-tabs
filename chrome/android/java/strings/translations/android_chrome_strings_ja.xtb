@@ -1398,36 +1398,41 @@ VR を開始する前に、信頼できるサイトかどうかを確認して�
 <translation id="2453860139492968684">終了</translation>
 <translation id="7127980134843952133">ダウンロード履歴</translation>
 <translation id="327726072512457161">設定終了</translation>
-<translation id="351823742912624358">広告&amp; トラッカーをブロック</translation>
-<translation id="676626188808136495">広告 &amp; トラッキングをブロック</translation>
-<translation id="6975719536773320922">広告 &amp; トラッカー
-をブロック</translation>
-<translation id="8158940752709423201">広告 &amp; トラッカー</translation>
+<translation id="351823742912624358">ブロック済みの
+広告とトラッカー</translation>
+<translation id="676626188808136495">広告とトラッカーをブロック</translation>
+<translation id="6975719536773320922">ブロック済みの
+広告とトラッカー</translation>
+<translation id="8158940752709423201">広告とトラッカー</translation>
 <translation id="8565174155241544325">プライバシーを尊重する広告を視聴して
 %1$ssを獲得することができます。</translation>
-<translation id="7924320838799747606">あなたの収支</translation>
+<translation id="7924320838799747606">残高</translation>
 <translation id="6160106411363856968">BAP</translation>
 <translation id="1081826981536899387">BATポイント</translation>
 <translation id="7837083325641186736"><ph name="VALUE" /></translation>
 <translation id="3826081199286264109">米ドル</translation>
 <translation id="1910721550319506122">ようこそ！</translation>
 <translation id="3101693828171454453"><ph name="TOKEN" />が不足</translation>
-<translation id="9212459913845238740">ポイント付与を請求済</translation>
-<translation id="3523149753820792761"><ph name="BAT_VALUE" /> <ph name="BAT_TEXT" />を寄付しました。</translation>
+<translation id="9212459913845238740">受け取り済みのポイント</translation>
+<translation id="3523149753820792761"><ph name="BAT_VALUE" /> <ph name="BAT_TEXT" />を支援しました。</translation>
 <translation id="5497435273900537730">無料で <ph name="TOKEN" />を受け取れます。</translation>
-<translation id="2132683977638223450">無料ポイントの付与</translation>
+<translation id="2132683977638223450">無料のポイント付与</translation>
 <translation id="4376933248999950592"><ph name="BAT_VALUE" />  <ph name="BAT_TEXT" />を
-まだ登録して寄付を受け取っていないクリエイター向けに割り当てました。
-確認されるまで、あるいは90日間が過ぎるまでブラウザーは寄付を継続します。</translation>
+まだ支援の受け取り設定が完了していないクリエイター向けに送信しました。
+設定が完了するか、あるいは90日間が経過するまであなたのブラウザーは送信を試みます。</translation>
 <translation id="4522570452068850558">詳細</translation>
-<translation id="4702084935512138078">プライバシーを侵害する広告 &amp; トラッカーにウェブで追跡されることなく閲覧できます。</translation>
-<translation id="8537217141725709400"><ph name="TOKEN" />を獲得</translation>
-<translation id="7396091471805549630">リワードを有効にすることで、次に同意します</translation>
+<translation id="4702084935512138078">プライバシーを侵害する広告やトラッカーに追跡されることなくウェブ閲覧できます。</translation>
+<translation id="8537217141725709400"><ph name="TOKEN" />獲得</translation>
+<translation id="7396091471805549630">リワードを有効にすると、以下に同意したと見なされます。</translation>
 <translation id="597993392929850353">Braveライセンス</translation>
-<translation id="1486343603936278248">トークン</translation>
+<translation id="1486343603936278248">ポイント</translation>
 <translation id="8713995420537272453">ポイント</translation>
 <translation id="6678056861663824314">1 <ph name="TIP" /></translation>
 <translation id="4065726515175370979">5 <ph name="TIP" /></translation>
 <translation id="8171148564903208264">10 <ph name="TIP" /></translation>
-<translation id="3540580927110899945">プライバシーを尊重する広告を視聴することで<ph name="TOKEN" />を獲得できるようになりました。</translation>
+<translation id="3540580927110899945">プライバシーに配慮した広告を見ることで
+<ph name="TOKEN" />を獲得できるようになりました。</translation>
+<translation id="7781069478569868053">新しいタブページ</translation>
+<translation id="8522669544471808198">背景画像を表示</translation>
+<translation id="3870475560794762985">スポンサード画像を表示</translation>
 </translationbundle>
