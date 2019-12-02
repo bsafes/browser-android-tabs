@@ -329,4 +329,6 @@
     <string name="five_tip_option">5 <ph name=\"TIP\">%1$s<ex>BAT</ex></ph></string>
     <string name="ten_tip_option">10 <ph name=\"TIP\">%1$s<ex>BAT</ex></ph></string>
 
+    <string name="photo_by"><ph name=\"PHOTO_BY\">%1$s </ph> द्वारा फ़ोटो</string>
+
 </resources>

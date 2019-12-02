@@ -331,4 +331,6 @@ HTTPS</string>
     <string name="five_tip_option">5 <ph name=\"TIP\">%1$s<ex>عملة BAT الرمزية</ex></ph></string>
     <string name="ten_tip_option">10 <ph name=\"TIP\">%1$s<ex>عملة BAT الرمزية</ex></ph></string>
 
+    <string name="photo_by">صورة من تصوير <ph name=\"PHOTO_BY\">%1$s</ph></string>
+
 </resources>
