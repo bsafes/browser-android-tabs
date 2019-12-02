@@ -277,6 +277,7 @@ public class Tab {
     private final UserDataHost mUserDataHost = new UserDataHost();
 
     private BackgroundImage backgroundImage;
+    private int index;
 
     /**
      * @return {@link UserDataHost} that manages {@link UserData} objects attached to
@@ -358,6 +359,7 @@ public class Tab {
         mFingerprintsBlocked = 0;
 
         backgroundImage = getBackgroundImage();
+        index = SponsoredImageUtil.imageIndex;
     }
 
     /**
@@ -2004,6 +2006,10 @@ public class Tab {
         return backgroundImage;
     }
 
+    public int getIndex() {
+        return index;
+    }
+
     private BackgroundImage getBackgroundImage() {
         BackgroundImage backgroundImage;
         SharedPreferences mSharedPreferences = ContextUtils.getAppSharedPreferences();
@@ -2015,8 +2021,7 @@ public class Tab {
             if ((sponsoredImage.getStartDate() <= currentTime  && currentTime <= sponsoredImage.getEndDate()) 
                 && LocaleUtil.isSponsoredRegions()
                 && mSharedPreferences.getBoolean(BackgroundImagesPreferences.PREF_SHOW_SPONSORED_IMAGES, true)) {
-                // sponsoredImageClick();
-                SponsoredImageUtil.imageIndex = SponsoredImageUtil.imageIndex + 3;
+                SponsoredImageUtil.imageIndex++;
                 return sponsoredImage;
             }
         }
@@ -2028,7 +2033,6 @@ public class Tab {
                 && LocaleUtil.isSponsoredRegions()
                 && mSharedPreferences.getInt(BackgroundImagesPreferences.PREF_APP_OPEN_COUNT, 0) != 1
                 && mSharedPreferences.getBoolean(BackgroundImagesPreferences.PREF_SHOW_SPONSORED_IMAGES, true)) {
-                // sponsoredImageClick();
                 backgroundImage = sponsoredImage;
             } else {
                 backgroundImage = SponsoredImageUtil.getBackgroundImage();
